@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Informations">
+   <children>
+      <Pane layoutX="13.0" layoutY="240.0" prefHeight="92.0" prefWidth="565.0" style="-fx-background-color: #669900;">
+         <children>
+            <CheckBox layoutX="23.0" layoutY="14.0" mnemonicParsing="false" text="Keine Treppe" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="32.0" layoutY="38.0" mnemonicParsing="false" text="Keine Aufzüge" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="32.0" layoutY="70.0" mnemonicParsing="false" text="Keine Rolltreppe" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="270.0" layoutY="23.0" mnemonicParsing="false" text="Niederflurfahrzeuge benötigt" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="270.0" layoutY="55.0" mnemonicParsing="false" text="Einstiegshilfe oder ebenerdiger Einstieg benötigt" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
