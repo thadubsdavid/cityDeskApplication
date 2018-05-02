@@ -4,82 +4,77 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Health">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Health">
    <children>
-      <Button layoutX="34.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gastronomie" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="578.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Arzt" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="463.0" layoutY="525.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Apotheke" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="463.0" layoutY="474.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Therapie" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="22.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="110.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Einkaufen" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="898.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Health" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="679.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Kultur" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Gesundheit" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="323.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Kultur" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="630.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Krankenhaus" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="463.0" layoutY="422.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Fitness" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="403.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Unterhaltung" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Arzt" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="305.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Krankenhaus" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Apotheke" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="271.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Arzt" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Therapie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="238.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Apotheke" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Krankenhaus" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="207.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Therapie" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Fitness" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="185.0" layoutY="175.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Fitness" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Krankenhaus" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Arzt" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Apotheke" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Therapie" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="185.0" layoutY="341.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Fitness" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
+      
    </children>
 </AnchorPane>

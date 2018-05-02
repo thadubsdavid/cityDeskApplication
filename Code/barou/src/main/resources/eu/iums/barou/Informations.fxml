@@ -5,31 +5,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Informations">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Informations">
    <children>
       <Pane layoutY="579.0" prefHeight="92.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
-            <CheckBox layoutX="58.0" layoutY="14.0" mnemonicParsing="false" text="Keine Treppe" textFill="#d7d7d7">
+            <CheckBox layoutX="32.0" layoutY="37.0" mnemonicParsing="false" text="Keine Aufzüge" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="32.0" layoutY="38.0" mnemonicParsing="false" text="Keine Aufzüge" textFill="#d7d7d7">
+            <CheckBox layoutX="32.0" layoutY="63.0" mnemonicParsing="false" text="Keine Rolltreppe" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="32.0" layoutY="70.0" mnemonicParsing="false" text="Keine Rolltreppe" textFill="#d7d7d7">
+            <CheckBox layoutX="270.0" layoutY="11.0" mnemonicParsing="false" text="Niederflurfahrzeuge benötigt" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="270.0" layoutY="23.0" mnemonicParsing="false" text="Niederflurfahrzeuge benötigt" textFill="#d7d7d7">
+            <CheckBox layoutX="270.0" layoutY="37.0" mnemonicParsing="false" text="Einstiegshilfe oder ebenerdiger Einstieg benötigt" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="270.0" layoutY="55.0" mnemonicParsing="false" text="Einstiegshilfe oder ebenerdiger Einstieg benötigt" textFill="#d7d7d7">
+            <CheckBox layoutX="32.0" layoutY="11.0" mnemonicParsing="false" text="Keine Treppe" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>

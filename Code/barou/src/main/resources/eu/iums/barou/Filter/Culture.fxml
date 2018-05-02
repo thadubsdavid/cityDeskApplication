@@ -4,72 +4,67 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Culture">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Culture">
    <children>
-      <Button layoutX="61.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gastronomie" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="579.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="679.0" layoutY="526.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="679.0" layoutY="475.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="22.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="168.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Einkaufen" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gesundheit" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="898.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Unterhaltung" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="274.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gesundheit" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="685.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="371.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kultur" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="631.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="679.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="489.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Unterhaltung" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="369.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Parks" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="369.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kunst" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="679.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="369.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Geschichtliches" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="369.0" layoutY="299.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Museum" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="369.0" layoutY="266.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Museum" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="369.0" layoutY="236.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Geschichtliches" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="369.0" layoutY="204.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kunst" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="369.0" layoutY="175.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Parks" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
+      
    </children>
 </AnchorPane>

@@ -4,79 +4,73 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
    <children>
-      <Button layoutX="33.0" layoutY="320.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Gastronomie" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="578.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="525.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bio-Laden" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="474.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kleidung" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="22.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="107.0" layoutY="327.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Einkaufen" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="463.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gesundheit" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="679.0" layoutY="685.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Kultur" textFill="#d7d7d7">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="898.0" layoutY="685.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="196.0" layoutY="327.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Gesundheit" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="281.0" layoutY="327.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kultur" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="630.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Lebensmittel" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button layoutX="245.0" layoutY="423.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Drogerie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="379.0" layoutY="327.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Unterhaltung" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="107.0" layoutY="295.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Lebensmittel" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bio-Laden" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="107.0" layoutY="264.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kleidung" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="107.0" layoutY="231.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Bio-Laden" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Lebensmittel" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="107.0" layoutY="200.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kleidung" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="169.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Drogerie" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="333.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Lebensmittel" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="333.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="333.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Bio-Laden" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="333.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Kleidung" textAlignment="CENTER" textFill="#d7d7d7">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="107.0" layoutY="333.0" mnemonicParsing="false" prefWidth="119.0" style="-fx-background-color: #669900;" text="Drogerie" textAlignment="CENTER" textFill="#d7d7d7">
+      <Button layoutX="245.0" layoutY="685.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Drogerie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
