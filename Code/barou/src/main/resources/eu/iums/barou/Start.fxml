@@ -3,60 +3,14 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Informations">
+<AnchorPane id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Start">
    <children>
-      <Pane id="pane_Einschränkungen" layoutY="570.0" prefHeight="92.0" prefWidth="1102.0" style="-fx-background-color: #669900;">
-         <children>
-            <CheckBox id="checkbox_Treppe" layoutX="32.0" layoutY="11.0" mnemonicParsing="false" text="Keine Treppe" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </CheckBox>
-            <CheckBox id="checkbox_Aufzüge" layoutX="32.0" layoutY="37.0" mnemonicParsing="false" text="Keine Aufzüge" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </CheckBox>
-            <CheckBox id="checkbox_Rolltreppe" layoutX="32.0" layoutY="63.0" mnemonicParsing="false" text="Keine Rolltreppe" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </CheckBox>
-            <CheckBox id="checkbox_Niederflurfahrzeuge" layoutX="270.0" layoutY="11.0" mnemonicParsing="false" text="Niederflurfahrzeuge benötigt" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </CheckBox>
-            <CheckBox id="checkbox_Einstiegshilfe" layoutX="270.0" layoutY="37.0" mnemonicParsing="false" text="Einstiegshilfe oder ebenerdiger Einstieg benötigt" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </CheckBox>
-         </children></Pane>
-      <Group id="button_group_Zurueckpfeil" layoutX="1119.0" layoutY="580.0">
-         <children>
-            <Rectangle id="rechteck_80x80" arcHeight="5.0" arcWidth="5.0" fill="#669900" height="80.0" stroke="#669900" strokeType="INSIDE" width="80.0" />
-            <ImageView id="image_pfeil" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/pfeil1.png" />
-               </image>
-            </ImageView>
-            <Button id="button_80x80_transparent" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </Group>
       <AnchorPane id="anchorpane_buttonbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
             <Group id="button_group_Suche" layoutX="30.0" layoutY="17.0">
@@ -194,5 +148,10 @@
             </Group>
          </children>
       </AnchorPane>
+      <ImageView id="image_Standort" fitHeight="80.0" fitWidth="30.0" layoutX="705.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/marker1.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

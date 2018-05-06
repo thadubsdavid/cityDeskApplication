@@ -20,19 +20,19 @@
                <children>
                   <TextField id="text_ZoologischerStadtgarten" layoutX="64.0" layoutY="16.0" style="-fx-background-color: #669900;" text="Zoologischer Stadtgarten" />
                </children></Pane>
-            <Button layoutX="262.0" layoutY="187.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="76.0" text="Route" />
-            <TextField layoutX="122.0" layoutY="129.0" prefHeight="43.0" prefWidth="213.0" text="Infos zum POI" />
-            <TextField layoutX="122.0" layoutY="80.0" prefHeight="43.0" prefWidth="213.0" text="Infos zur Barrierefreiheit" />
-            <ImageView fitHeight="98.0" fitWidth="101.0" layoutX="14.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <Button id="button_Route2" layoutX="262.0" layoutY="187.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="76.0" text="Route" />
+            <TextField id="text_InfoBarrierefreiheit" layoutX="122.0" layoutY="80.0" prefHeight="43.0" prefWidth="213.0" text="Infos zur Barrierefreiheit" />
+            <TextField id="text_InfoPOI" layoutX="122.0" layoutY="129.0" prefHeight="43.0" prefWidth="213.0" text="Infos zum POI" />
+            <ImageView id="image_Zoo" fitHeight="98.0" fitWidth="101.0" layoutX="14.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../../../zoo-de-karlsruhe-entree.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="122.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_Bahn" fitHeight="52.0" fitWidth="61.0" layoutX="122.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../../../2000px-Bahn_aus_Zusatzzeichen_1024-15.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="59.0" layoutX="205.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_Fußgänger" fitHeight="52.0" fitWidth="59.0" layoutX="205.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../../../2000px-Sinnbild_Fußgänger.svg.png" />
                </image>
@@ -203,12 +203,22 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button id="button_134x107_transparent" mnemonicParsing="false" prefHeight="107.0" prefWidth="134.0">
+            <Button id="button_134x107_transparent" mnemonicParsing="false" opacity="0.1" prefHeight="107.0" prefWidth="134.0">
                <padding>
                   <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                </padding>
             </Button>
          </children>
       </Group>
+      <Button id="button_Zoo" layoutX="908.0" layoutY="610.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Zoo" textFill="#d7d7d7">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <ImageView id="image_Pin" fitHeight="50.0" fitWidth="100.0" layoutX="560.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/pin1.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
