@@ -8,23 +8,23 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Search">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Search">
    <children>
-      <AnchorPane id="anchorpane_buttonbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
-      <Pane id="pane_Suche" layoutX="300.0" layoutY="38.0" prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #669900;">
+      <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
+      <Pane id="pane_Suche" fx:id="pane_greenHintergrundSuche" layoutX="300.0" layoutY="38.0" prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #669900;">
          <children>
-            <ImageView id="image_Suche_81x81" fitHeight="81.0" fitWidth="81.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="image_Suche_81x81" fx:id="image_Suche2" fitHeight="81.0" fitWidth="81.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/suche1.png" />
+                  <Image url="@Pictures/suche1.png" />
                </image>
             </ImageView>
-            <TextField id="text_Suche_Eingabe" layoutX="109.0" layoutY="3.0" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: #669900;" text="______________________________">
+            <TextField id="text_Suche_Eingabe" fx:id="text_SucheEingabe" layoutX="109.0" layoutY="3.0" prefHeight="36.0" prefWidth="484.0" style="-fx-background-color: #669900;" text="______________________________">
                <font>
                   <Font size="35.0" />
                </font>
             </TextField>
          </children>
       </Pane>
-      <ListView id="listview_Suche" layoutX="300.0" layoutY="119.0" prefHeight="266.0" prefWidth="600.0" />
+      <ListView id="listview_Suche" fx:id="listview_Suche" layoutX="300.0" layoutY="119.0" prefHeight="266.0" prefWidth="600.0" />
    </children>
 </AnchorPane>

@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.POI">
+<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.POI">
    <children>
       <ImageView id="image_Standort" fx:id="image_marker" fitHeight="80.0" fitWidth="30.0" layoutX="715.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
          <image>

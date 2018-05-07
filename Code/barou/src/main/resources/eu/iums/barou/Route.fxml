@@ -11,23 +11,23 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Route">
+<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Route">
    <children>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="680.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
-      <Pane id="pane_Route" fx:id="pane_HintergrundRouteEingabe" layoutX="310.0" layoutY="265.0" prefHeight="194.0" prefWidth="580.0" style="-fx-background-color: #669900;">
+      <Pane id="pane_Route" fx:id="pane_greenHintergrundRouteEingabe" layoutX="310.0" layoutY="265.0" prefHeight="194.0" prefWidth="580.0" style="-fx-background-color: #669900;">
          <children>
-            <Label id="text_Von" layoutX="29.0" layoutY="49.0" text="Von:" textFill="#d7d7d7">
+            <Label id="text_Von" fx:id="label_Von" layoutX="29.0" layoutY="49.0" text="Von:" textFill="#d7d7d7">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField id="textfeld_von" layoutX="95.0" layoutY="37.0" prefHeight="50.0" prefWidth="323.0" text="Karlsruhe Hauptbahnhof" />
-            <Label id="text_Nach" layoutX="29.0" layoutY="120.0" text="Nach:" textFill="#d7d7d7">
+            <TextField id="textfeld_von" fx:id="text_KaHbf" layoutX="95.0" layoutY="37.0" prefHeight="50.0" prefWidth="323.0" text="Karlsruhe Hauptbahnhof" />
+            <Label id="text_Nach" fx:id="label_Nach" layoutX="29.0" layoutY="120.0" text="Nach:" textFill="#d7d7d7">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField id="textfeld_nach" layoutX="95.0" layoutY="107.0" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
+            <TextField id="textfeld_nach" fx:id="text_ZielEingeben" layoutX="95.0" layoutY="107.0" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
             <Group id="button_group_Route" fx:id="button_group_Route" layoutX="439.0" layoutY="43.0">
                <children>
                   <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">

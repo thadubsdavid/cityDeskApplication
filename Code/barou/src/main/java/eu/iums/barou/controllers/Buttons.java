@@ -10,6 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.control.TextField;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ListView;
 
 public class Buttons {
 
@@ -193,7 +194,128 @@ public class Buttons {
 
     //Route
     @FXML
-    private Pane pane_HintergrundRouteEingabe;
+    private Pane pane_greenHintergrundRouteEingabe;
+
+    @FXML
+    private Label label_Von;
+
+    @FXML
+    private TextField text_KaHbf;
+
+    @FXML
+    private Label label_Nach;
+
+    @FXML
+    private TextField text_ZielEingeben;
+
+    //RoutingInformation
+    @FXML
+    private Pane pane_greenHintergrundVerb1;
+
+    @FXML
+    private TextField text_Verbindung1;
+
+    @FXML
+    private TextField text_Uhrzeit1;
+
+    @FXML
+    private TextField text_VonNach1;
+
+    @FXML
+    private TextField text_Verkehrsmittel1;
+
+    @FXML
+    private ImageView image_Info;
+
+    @FXML
+    private Button button_Info1;
+
+    @FXML
+    private Pane pane_greenHintergrunVerb2;
+
+    @FXML
+    private TextField text_Verbindung2;
+
+    @FXML
+    private TextField text_Uhrzeit2;
+
+    @FXML
+    private TextField text_VonNach2;
+
+    @FXML
+    private TextField text_Verkehrsmittel2;
+
+    @FXML
+    private Button button_Info2;
+
+    @FXML
+    private Pane pane_greenHintergrundVerb3;
+
+    @FXML
+    private TextField text_Verbindung3;
+
+    @FXML
+    private TextField text_Uhrzeit3;
+
+    @FXML
+    private TextField text_VonNach3;
+
+    @FXML
+    private TextField text_Verkehrsmittel3;
+
+    @FXML
+    private Button button_Info3;
+
+    @FXML
+    private Pane pane_greenHintergrundVerb4;
+
+    @FXML
+    private TextField text_Verbindung4;
+
+    @FXML
+    private TextField text_Uhrzeit4;
+
+    @FXML
+    private TextField text_VonNach4;
+
+    @FXML
+    private TextField text_Verkehrsmittel4;
+
+    @FXML
+    private Button button_Info4;
+
+    @FXML
+    private Pane pane_greenHintergrundPfeillinks;
+
+    @FXML
+    private ImageView image_Pfeillinks;
+
+    @FXML
+    private Button button_Pfeillinks;
+
+    @FXML
+    private Pane pane_greenHintergrundPfeilrechts;
+
+    @FXML
+    private ImageView image_Pfeilrechts;
+
+    @FXML
+    private Button button_Pfeilrechts;
+
+    //Search
+    @FXML
+    private Pane pane_greenHintergrundSuche;
+
+    @FXML
+    private ImageView image_Suche2;
+
+    @FXML
+    private TextField text_SucheEingabe;
+
+    @FXML
+    private ListView<?> listview_Suche;
+
+    //Start
 
 
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.InfoDialog">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.InfoDialog">
    <children>
       <Pane id="pane_InfoDialog" fx:id="pane_InfoDialog" layoutX="201.0" layoutY="167.0" prefHeight="256.0" prefWidth="352.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
          <children>
