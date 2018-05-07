@@ -154,9 +154,6 @@ public class Buttons {
     private ImageView image_Fuß;
 
     @FXML
-    private Button button_Zoo;
-
-    @FXML
     private ImageView image_pin;
 
     //Informations
@@ -316,6 +313,206 @@ public class Buttons {
     private ListView<?> listview_Suche;
 
     //Start
+    //nichts
+
+    //Filter
+    //Categories
+    @FXML
+    private Button button_Gastronomie;
+
+    @FXML
+    private Button button_Einkaufen;
+
+    @FXML
+    private Button button_Gesundheit;
+
+    @FXML
+    private Button button_Kultur;
+
+    @FXML
+    private Button button_Unterhaltung;
+
+    //Culture
+    @FXML
+    private Button button_GastronomieLight;
+
+    @FXML
+    private Button button_EinkaufenLight;
+
+    @FXML
+    private Button button_GesundheitLight;
+
+    @FXML
+    private Button button_UnterhaltungLight;
+
+    @FXML
+    private Group button_group_KulturOben;
+
+    @FXML
+    private Button button_ParksOben;
+
+    @FXML
+    private Button button_KunstOben;
+
+    @FXML
+    private Button button_GeschichtlichesOben;
+
+    @FXML
+    private Button button_MuseumOben;
+
+    @FXML
+    private Group button_group_KulturUnten;
+
+    @FXML
+    private Button button_KunstUnten;
+
+    @FXML
+    private Button button_GeschichtlichesUnten;
+
+    @FXML
+    private Button button_ParksUnten;
+
+    @FXML
+    private Button button_MuseumUnten;
+
+    //Entertainment
+    @FXML
+    private Button button_KulturLight;
+
+    @FXML
+    private Group button_group_UnterhaltungOben;
+
+    @FXML
+    private Button button_SchwimmbadOben;
+
+    @FXML
+    private Button button_ZooOben;
+
+    @FXML
+    private Button button_TheaterOben;
+
+    @FXML
+    private Button button_KinoOben;
+
+    @FXML
+    private Group button_group_UnterhaltungUnten;
+
+    @FXML
+    private Button button_TheaterUnten;
+
+    @FXML
+    private Button button_ZooUnten;
+
+    @FXML
+    private Button button_SchwimmbadUnten;
+
+    @FXML
+    private Button button_KinoUnten;
+
+    //Gastronomy
+    @FXML
+    private Group button_group_GastronomieOben;
+
+    @FXML
+    private Button button_ImbissOben;
+
+    @FXML
+    private Button button_RestaurantOben;
+
+    @FXML
+    private Button button_BarOben;
+
+    @FXML
+    private Button button_CafeOben;
+
+    @FXML
+    private Group button_group_GastronomieUnten;
+
+    @FXML
+    private Button button_BarUnten;
+
+    @FXML
+    private Button button_RestaurantUnten;
+
+    @FXML
+    private Button button_ImbissUnten;
+
+    @FXML
+    private Button button_CafeUnten;
+
+    //Health
+    @FXML
+    private Group button_group_GesundheitOben;
+
+    @FXML
+    private Button button_FitnessOben;
+
+    @FXML
+    private Button button_TherapieOben;
+
+    @FXML
+    private Button button_ApothekeOben;
+
+    @FXML
+    private Button button_ArztOben;
+
+    @FXML
+    private Button button_KrankenhausOben;
+
+    @FXML
+    private Group button_group_GesundheitUnten;
+
+    @FXML
+    private Button button_ArztUnten;
+
+    @FXML
+    private Button button_ApothekeUnten;
+
+    @FXML
+    private Button button_TherapieUnten;
+
+    @FXML
+    private Button button_KrankenhausUnten;
+
+    @FXML
+    private Button button_FitnessUnten;
+
+    //Shopping
+    @FXML
+    private Group button_group_EinkaufenOben;
+
+    @FXML
+    private Button button_DrogerieOben;
+
+    @FXML
+    private Button button_KleidungOben;
+
+    @FXML
+    private Button button_BioLadenOben;
+
+    @FXML
+    private Button button_BäckerMetzgerOben;
+
+    @FXML
+    private Button button_LebensmittelOben;
+
+    @FXML
+    private Group button_group_EinkaufenUnten;
+
+    @FXML
+    private Button button_BäckerMetzgerUnten;
+
+    @FXML
+    private Button button_BioLadenUnten;
+
+    @FXML
+    private Button button_KleidungUnten;
+
+    @FXML
+    private Button button_LebensmittelUnten;
+
+    @FXML
+    private Button button_DrogerieUnten;
 
 
 }

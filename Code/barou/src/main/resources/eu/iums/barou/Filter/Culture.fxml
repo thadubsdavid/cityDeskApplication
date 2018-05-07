@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Culture">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Culture">
    <children>
       <Button id="button_GastronomieLight" fx:id="button_GastronomieLight" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
          <font>
@@ -30,55 +30,55 @@
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Group id="button_group_UnterpunkteKultur" layoutX="679.0" layoutY="390.0">
+      <Group id="button_group_UnterpunkteKultur" fx:id="button_group_KulturOben" layoutX="679.0" layoutY="390.0">
          <children>
-            <Button id="button_Parks" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
+            <Button id="button_Parks" fx:id="button_ParksOben" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Kunst" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
+            <Button id="button_Kunst" fx:id="button_KunstOben" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Geschichtliches" layoutY="104.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
+            <Button id="button_Geschichtliches" fx:id="button_GeschichtlichesOben" layoutY="104.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Museum" layoutY="156.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
+            <Button id="button_Museum" fx:id="button_MuseumOben" layoutY="156.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
-      <Group id="button_group_UnterpunkteKultur" layoutX="679.0" layoutY="600.0">
+      <Group id="button_group_UnterpunkteKultur" fx:id="button_group_KulturUnten" layoutX="679.0" layoutY="600.0">
          <children>
-            <Button id="button_Kunst" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
+            <Button id="button_Kunst" fx:id="button_KunstUnten" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Geschichtliches" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
+            <Button id="button_Geschichtliches" fx:id="button_GeschichtlichesUnten" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Geschichtliches" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Parks" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
+            <Button id="button_Parks" fx:id="button_ParksUnten" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Museum" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
+            <Button id="button_Museum" fx:id="button_MuseumUnten" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Museum" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
-      <Button id="button_Kultur" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7">
+      <Button id="button_Kultur" fx:id="button_Kultur" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>

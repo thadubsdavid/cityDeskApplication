@@ -39,7 +39,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Button id="button_Zoo" fx:id="button_Zoo" layoutX="908.0" layoutY="610.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Zoo" textFill="#d7d7d7">
+      <Button id="button_Zoo" fx:id="button_ZooUnten" layoutX="908.0" layoutY="610.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Zoo" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
