@@ -6,6 +6,7 @@ import com.sothawo.mapjfx.MapView;
 import com.sothawo.mapjfx.offline.OfflineCache;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,4 +26,6 @@ public class MainController {
     protected void initialize() {
         // TODO
     }
+
+
 }

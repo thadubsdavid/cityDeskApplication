@@ -13,8 +13,8 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Route">
    <children>
-      <AnchorPane id="anchorpane_buttonbar" layoutY="680.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
-      <Pane id="pane_Route" layoutX="310.0" layoutY="265.0" prefHeight="194.0" prefWidth="580.0" style="-fx-background-color: #669900;">
+      <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="680.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
+      <Pane id="pane_Route" fx:id="pane_HintergrundRouteEingabe" layoutX="310.0" layoutY="265.0" prefHeight="194.0" prefWidth="580.0" style="-fx-background-color: #669900;">
          <children>
             <Label id="text_Von" layoutX="29.0" layoutY="49.0" text="Von:" textFill="#d7d7d7">
                <font>
@@ -28,19 +28,19 @@
                </font>
             </Label>
             <TextField id="textfeld_nach" layoutX="95.0" layoutY="107.0" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
-            <Group id="button_group_Route" layoutX="432.0" layoutY="43.0">
+            <Group id="button_group_Route" fx:id="button_group_Route" layoutX="439.0" layoutY="43.0">
                <children>
-                  <ImageView id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/Route1.png" />
+                        <Image url="@Pictures/Route1.png" />
                      </image>
                   </ImageView>
-                  <Label id="text_Route" layoutX="42.0" layoutY="81.0" style="-fx-background-color: #669900;" text="Route" textFill="#d7d7d7">
+                  <Label id="text_Route" fx:id="label_Route" layoutX="42.0" layoutY="81.0" style="-fx-background-color: #669900;" text="Route" textFill="#d7d7d7">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
