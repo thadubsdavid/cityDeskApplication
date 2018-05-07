@@ -1,9 +1,17 @@
 package eu.iums.barou;
 
+import com.sun.xml.internal.bind.v2.model.core.ID;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
+import javax.swing.*;
+
+import java.awt.event.ActionListener;
+
+import static javafx.scene.input.KeyCode.R;
 
 /**
  * The main entry point of the application. Initializes the JavaFX UI as well as other required resources and services.
@@ -15,6 +23,7 @@ public class App extends javafx.application.Application {
     public static void main(String[] args) {
         launch(args);
     }
+    Button button = new Button()
 
     /**
      * Initialize JavaFX application and main window
@@ -30,5 +39,9 @@ public class App extends javafx.application.Application {
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
+
+
     }
+
+
 }
