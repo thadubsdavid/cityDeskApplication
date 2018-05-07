@@ -225,7 +225,7 @@
             <Rectangle id="rechteck_80x80" arcHeight="5.0" arcWidth="5.0" fill="#669900" height="80.0" stroke="#669900" strokeType="INSIDE" width="80.0" />
             <ImageView id="image_pfeil" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Bilder/pfeil1.png" />
+                  <Image url="@../Pictures/pfeil1.png" />
                </image>
             </ImageView>
             <Button id="button_80x80_transparent" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
