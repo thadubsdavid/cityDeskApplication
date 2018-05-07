@@ -3,11 +3,7 @@ package eu.iums.barou;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.fxml.FXML;
-import javafx.scene.Group;
-import javafx.scene.control.Button;
 
 /**
  * The main entry point of the application. Initializes the JavaFX UI as well as other required resources and services.
@@ -15,7 +11,6 @@ import javafx.scene.control.Button;
  * The application logic should be delegated to the controllers and other components.
  */
 public class App extends javafx.application.Application {
-
 
     public static void main(String[] args) {
         launch(args);
@@ -35,7 +30,5 @@ public class App extends javafx.application.Application {
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        }
-
+    }
 }

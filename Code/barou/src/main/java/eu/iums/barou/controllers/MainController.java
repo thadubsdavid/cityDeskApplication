@@ -22,7 +22,7 @@ public class MainController {
     @FXML
     private MapController mapController;
 
-    //@FXML
+    @FXML
     protected void initialize() {
         // TODO
     }
