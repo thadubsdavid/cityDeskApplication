@@ -16,8 +16,6 @@ import javax.swing.*;
  */
 public class App extends javafx.application.Application {
 
-    @FXML
-    private Button button_Suche;
 
     public static void main(String[] args) {
         launch(args);
@@ -37,7 +35,6 @@ public class App extends javafx.application.Application {
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-
 
     }
 }
