@@ -30,11 +30,11 @@ public class App extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("MainView.fxml"));
+        loader.setLocation(getClass().getResource("ButtonBar.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-
     }
+
 }

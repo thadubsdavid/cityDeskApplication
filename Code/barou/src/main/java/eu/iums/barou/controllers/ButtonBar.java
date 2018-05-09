@@ -1,6 +1,8 @@
 package eu.iums.barou.controllers;
 
+        import eu.iums.barou.App;
         import javafx.fxml.FXML;
+        import javafx.fxml.FXMLLoader;
         import javafx.scene.Group;
         import javafx.scene.control.Button;
         import javafx.scene.control.Label;
@@ -33,6 +35,8 @@ public class ButtonBar {
 
     @FXML
     private Button button_Suche;
+
+
 
     @FXML
     private Group button_group_Filter;
@@ -106,6 +110,9 @@ public class ButtonBar {
     @FXML
     private Button button_Hilfe;
 
-    public void pressButton(javafx.event.ActionEvent actionEvent) {
+    public void pressButtonSearch (javafx.event.ActionEvent actionEvent) {
+        FXMLLoader fxmlSearch = new FXMLLoader(getClass().getResource("Search.fxml"));
+        fxmlSearch.setRoot(this);
+        fxmlSearch.setController(this);
     }
 }
