@@ -1,13 +1,16 @@
 package eu.iums.barou;
 
+import eu.iums.barou.controllers.Language;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import sun.tools.jar.Main;
 
 import javax.swing.*;
+import java.io.IOException;
 
 /**
  * The main entry point of the application. Initializes the JavaFX UI as well as other required resources and services.
@@ -27,14 +30,36 @@ public class App extends javafx.application.Application {
      * @param primaryStage
      * @throws Exception
      */
+
+    Stage window;
+    Scene ButtonBar, Search;
+
+
+
+    @FXML
+    public Button button_Sprache;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+        //Scene Language = FXMLLoader.load(App.class.getResource("Language.fxml"));
+        //window = primaryStage;
+        //button_Sprache.setOnAction(e -> window.setScene(Language));
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ButtonBar.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
 
+        }
+
+
+    /*static Stage stg;
+
+    public void start (Stage stage) throws Exception {
+        this.stg = stage;
+        Parent root = FXMLLoader.load(getClass().getResource("Search.fxml"));
+        stage.show();
+    }*/
 }
