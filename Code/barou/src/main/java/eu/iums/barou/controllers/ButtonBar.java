@@ -141,9 +141,9 @@ public class ButtonBar {
         });
     }
 
-    /*@ FXML
+    @ FXML
     private void handleButtonAction(ActionEvent event) {
         button_Sprache.setOnAction(event1 -> getClass().getResource("Language.fxml"));
-    }*/
+    }
 
 }

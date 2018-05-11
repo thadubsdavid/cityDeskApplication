@@ -46,7 +46,8 @@ public class App extends javafx.application.Application {
         //button_Sprache.setOnAction(e -> window.setScene(Language));
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("ButtonBar.fxml"));
+        String pfad = "/eu/iums/barou/Language.fxml";
+        loader.setLocation(getClass().getResource(pfad));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
