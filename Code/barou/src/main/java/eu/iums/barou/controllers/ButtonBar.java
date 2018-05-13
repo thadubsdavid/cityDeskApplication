@@ -15,6 +15,7 @@ package eu.iums.barou.controllers;
         import javafx.scene.layout.AnchorPane;
         import javafx.stage.Stage;
 
+        import java.awt.*;
         import java.awt.event.ActionEvent;
         import java.io.IOException;
 
@@ -142,8 +143,16 @@ public class ButtonBar {
     }
 
     @ FXML
-    private void handleButtonAction(ActionEvent event) {
-        button_Sprache.setOnAction(event1 -> getClass().getResource("Language.fxml"));
+    private void handleButtonAction(ActionEvent event) throws IOException {
+        //button_Sprache.setOnAction(event1 -> getClass().getResource("Language.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("Search.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Node node = (Node) event.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
