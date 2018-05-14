@@ -60,4 +60,14 @@ public class Route {
         window.setScene(scene);
         window.show();
     }
-}
+
+    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+    }
+
