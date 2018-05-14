@@ -1,12 +1,20 @@
 package eu.iums.barou.controllers.Filter;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Categories {
 
@@ -127,4 +135,54 @@ public class Categories {
     @FXML
     private Button button_Zurück;
 
+    public void pressButtonGastronomy(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Gastronomy.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+
+    public void pressButtonShopping(ActionEvent actionEvent) throws IOException {
+            Parent parent = FXMLLoader.load(getClass().getResource("../S/Filterhopping.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+        }
+
+
+
+    public void pressButtonHealth(ActionEvent actionEvent) throws IOException {
+
+            Parent parent = FXMLLoader.load(getClass().getResource("/Filter/Health.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+
+    }
+
+    public void pressButtonCulture(ActionEvent actionEvent) throws IOException {
+            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Culture.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+
+    }
+
+    public void pressButtonEntertainment(ActionEvent actionEvent) throws IOException {
+            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Entertainment.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+
+    }
 }

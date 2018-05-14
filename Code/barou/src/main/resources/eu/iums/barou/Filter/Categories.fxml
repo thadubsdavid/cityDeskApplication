@@ -12,23 +12,23 @@
 
 <AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Filter.Categories">
    <children>
-      <Button id="button_Gastronomie" fx:id="button_Gastronomie" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
+      <Button id="button_Gastronomie" fx:id="button_Gastronomie" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7" onAction="#pressButtonGastronomy">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Button id="button_Einkaufen" fx:id="button_Einkaufen" layoutX="245.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7">
+      <Button id="button_Einkaufen" fx:id="button_Einkaufen" layoutX="245.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7" onAction="#pressButtonShopping">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Button id="button_Gesundheit" fx:id="button_Gesundheit" layoutX="463.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7">
+      <Button id="button_Gesundheit" fx:id="button_Gesundheit" layoutX="463.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7" onAction="#pressButtonHealth">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Button id="button_Kultur" fx:id="button_Kultur" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7">
+      <Button id="button_Kultur" fx:id="button_Kultur" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7" onAction="#pressButtonCulture">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Button id="button_Unterhaltung" fx:id="button_Unterhaltung" layoutX="898.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7">
+      <Button id="button_Unterhaltung" fx:id="button_Unterhaltung" layoutX="898.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7" onAction="#pressButtonEntertainment">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
