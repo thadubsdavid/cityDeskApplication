@@ -145,7 +145,7 @@ public class Categories {
     }
 
     public void pressButtonShopping(ActionEvent actionEvent) throws IOException {
-            Parent parent = FXMLLoader.load(getClass().getResource("../S/Filterhopping.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Shopping.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
