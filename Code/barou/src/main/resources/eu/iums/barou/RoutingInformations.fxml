@@ -41,7 +41,7 @@
                   <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/info1.png" />
                </image>
             </ImageView>
-            <Button fx:id="button_Info1" layoutX="112.0" layoutY="269.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" />
+            <Button fx:id="button_Info1" layoutX="112.0" layoutY="269.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#buttonPressedInfo1"/>
          </children>
       </Pane>
       <Pane fx:id="pane_greenHintergrunVerb2" layoutX="392.0" layoutY="222.0" prefHeight="356.0" prefWidth="200.0" style="-fx-background-color: #669900;">
@@ -137,7 +137,7 @@
                <image>
                   <Image url="@Pictures/links1.png" />
                </image></ImageView>
-            <Button fx:id="button_Pfeillinks" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" />
+            <Button fx:id="button_Pfeillinks" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0"  onAction="#buttonPressedLeft"/>
          </children></Pane>
       <Pane fx:id="pane_greenHintergrundPfeilrechts" layoutX="1072.0" layoutY="360.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;">
          <children>
@@ -145,7 +145,7 @@
                <image>
                   <Image url="@Pictures/rechts1.png" />
                </image></ImageView>
-            <Button fx:id="button_Pfeilrechts" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" />
+            <Button fx:id="button_Pfeilrechts" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" onAction="#buttonPressedRight"/>
          </children></Pane>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
@@ -161,7 +161,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedSearch">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -180,7 +180,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedFilter">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -199,7 +199,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedLimitations">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -218,7 +218,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedRoute">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -237,7 +237,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedHome">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -256,7 +256,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedLanguage">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -275,7 +275,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedHelp">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -292,7 +292,7 @@
                   <Image url="@Pictures/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7" onAction="#buttonPressedBack">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>

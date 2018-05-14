@@ -9,9 +9,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Route">
+<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Route">
    <children>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="680.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
       <Pane id="pane_Route" fx:id="pane_greenHintergrundRouteEingabe" layoutX="310.0" layoutY="265.0" prefHeight="194.0" prefWidth="580.0" style="-fx-background-color: #669900;">
@@ -49,5 +50,20 @@
             </Group>
          </children>
       </Pane>
+      <Group id="button_group_Zurueckpfeil" fx:id="button_group_Zurück" layoutX="1100.0" layoutY="581.0">
+         <children>
+            <Rectangle id="rechteck_80x80" fx:id="rechteck_greenzurück" arcHeight="5.0" arcWidth="5.0" fill="#669900" height="80.0" stroke="#669900" strokeType="INSIDE" width="80.0" />
+            <ImageView id="image_pfeil" fx:id="image_Zurück" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Pictures/pfeil1.png" />
+               </image>
+            </ImageView>
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" onAction="#buttonPresssedBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
    </children>
 </AnchorPane>

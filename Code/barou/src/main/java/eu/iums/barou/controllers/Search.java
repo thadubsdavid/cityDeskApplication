@@ -1,11 +1,20 @@
 package eu.iums.barou.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Search {
 
@@ -24,6 +33,9 @@ public class Search {
     @FXML
     private TextField text_SucheEingabe;
 
+    @FXML
+    private Button button_back;
+
     protected void buttonPressed(){
         String text = text_SucheEingabe.getText();
         text_SucheEingabe.setText(text);
@@ -34,4 +46,12 @@ public class Search {
     private ListView<?> listview_Suche;
 
 
+    public void pressButtonBack(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
 }
