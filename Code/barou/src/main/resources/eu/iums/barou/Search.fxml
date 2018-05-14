@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Search">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Search">
    <children>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;" />
       <Pane id="pane_Suche" fx:id="pane_greenHintergrundSuche" layoutX="300.0" layoutY="38.0" prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: #669900;">
@@ -37,7 +37,7 @@
                   <Image url="@Pictures/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_back" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7" onAction="#pressButtonBack">
+            <Button id="button_80x80_transparent" fx:id="button_back" mnemonicParsing="false" onAction="#pressButtonBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
