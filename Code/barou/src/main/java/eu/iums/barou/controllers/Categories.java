@@ -1,4 +1,4 @@
-package eu.iums.barou.controllers.Filter;
+package eu.iums.barou.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -136,7 +136,7 @@ public class Categories {
     private Button button_Zurück;
 
     public void pressButtonGastronomy(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Gastronomy.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -145,7 +145,7 @@ public class Categories {
     }
 
     public void pressButtonShopping(ActionEvent actionEvent) throws IOException {
-            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Shopping.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("../Shopping.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -157,7 +157,7 @@ public class Categories {
 
     public void pressButtonHealth(ActionEvent actionEvent) throws IOException {
 
-            Parent parent = FXMLLoader.load(getClass().getResource("/Filter/Health.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/Health.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -167,7 +167,7 @@ public class Categories {
     }
 
     public void pressButtonCulture(ActionEvent actionEvent) throws IOException {
-            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Culture.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("../Culture.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -177,7 +177,7 @@ public class Categories {
     }
 
     public void pressButtonEntertainment(ActionEvent actionEvent) throws IOException {
-            Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Entertainment.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

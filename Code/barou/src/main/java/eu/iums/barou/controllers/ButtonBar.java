@@ -175,7 +175,7 @@ public class ButtonBar {
     }
 
     public void pressButtonFilter(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter/Categories.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Categories.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
