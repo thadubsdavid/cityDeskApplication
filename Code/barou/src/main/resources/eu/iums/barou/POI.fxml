@@ -10,8 +10,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.scene.layout.AnchorPane?>
+
 <AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.POI">
    <children>
+      <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
       <ImageView id="image_Standort" fx:id="image_marker" fitHeight="80.0" fitWidth="30.0" layoutX="715.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Pictures/marker1.png" />

@@ -12,8 +12,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.scene.layout.AnchorPane?>
+
 <AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.InfoDialog">
    <children>
+
+      <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+
       <Pane id="pane_InfoDialog" fx:id="pane_InfoDialog" layoutX="201.0" layoutY="167.0" prefHeight="256.0" prefWidth="352.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
          <children>
             <Pane id="pane_InfoDialog_Überschrift" fx:id="pane_greenÜberschriftInfoDialog" prefHeight="71.0" prefWidth="352.0" style="-fx-background-color: #669900;">
