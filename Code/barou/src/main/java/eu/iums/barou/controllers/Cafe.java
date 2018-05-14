@@ -1,4 +1,4 @@
-package eu.iums.barou.Pictures;
+package eu.iums.barou.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.Group;

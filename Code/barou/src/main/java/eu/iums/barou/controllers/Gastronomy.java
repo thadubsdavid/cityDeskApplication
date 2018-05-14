@@ -1,4 +1,4 @@
-package eu.iums.barou.controllers.Filter;
+package eu.iums.barou.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.Group;
@@ -8,13 +8,13 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 
-public class Shopping {
+public class Gastronomy {
 
     @FXML
     private AnchorPane anchorpane_Standard;
 
     @FXML
-    private Button button_GastronomieLight;
+    private Button button_EinkaufenLight;
 
     @FXML
     private Button button_GesundheitLight;
@@ -26,43 +26,37 @@ public class Shopping {
     private Button button_UnterhaltungLight;
 
     @FXML
-    private Group button_group_EinkaufenOben;
+    private Group button_group_GastronomieOben;
 
     @FXML
-    private Button button_DrogerieOben;
+    private Button button_ImbissOben;
 
     @FXML
-    private Button button_KleidungOben;
+    private Button button_RestaurantOben;
 
     @FXML
-    private Button button_BioLadenOben;
+    private Button button_BarOben;
 
     @FXML
-    private Button button_BäckerMetzgerOben;
+    private Button button_CafeOben;
 
     @FXML
-    private Button button_LebensmittelOben;
+    private Group button_group_GastronomieUnten;
 
     @FXML
-    private Group button_group_EinkaufenUnten;
+    private Button button_BarUnten;
 
     @FXML
-    private Button button_BäckerMetzgerUnten;
+    private Button button_RestaurantUnten;
 
     @FXML
-    private Button button_BioLadenUnten;
+    private Button button_ImbissUnten;
 
     @FXML
-    private Button button_KleidungUnten;
+    private Button button_CafeUnten;
 
     @FXML
-    private Button button_LebensmittelUnten;
-
-    @FXML
-    private Button button_DrogerieUnten;
-
-    @FXML
-    private Button button_Einkaufen;
+    private Button button_Gastronomie;
 
     @FXML
     private AnchorPane anchorpane_greenbar;
