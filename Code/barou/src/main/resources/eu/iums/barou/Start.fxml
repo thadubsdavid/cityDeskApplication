@@ -30,7 +30,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedSearch">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -49,7 +49,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedFilter">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -68,7 +68,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedLimitations">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -87,7 +87,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressed">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
