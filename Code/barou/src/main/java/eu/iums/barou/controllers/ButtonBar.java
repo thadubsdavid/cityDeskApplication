@@ -120,7 +120,7 @@ public class ButtonBar {
     @FXML
     private Button button_Hilfe;
 
-    public void pressButton(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void pressButtonSearch(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
 
