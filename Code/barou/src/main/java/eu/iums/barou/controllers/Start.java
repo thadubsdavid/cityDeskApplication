@@ -1,5 +1,6 @@
 package eu.iums.barou.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
@@ -102,4 +103,12 @@ public class Start {
     @FXML
     private Button button_Hilfe;
 
+    public void buttonPressedSearch(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedFilter(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedLimitations(ActionEvent actionEvent) {
+    }
 }
