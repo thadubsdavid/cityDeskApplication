@@ -31,6 +31,10 @@ public class ButtonBar {
         anchorpane_greenbar.setVisible(true);
 
     }*/
+    @FXML
+    private Parent mapView;
+
+    private MapController mapController;
 
     @FXML
     private Group button_group_Suche;
@@ -116,13 +120,22 @@ public class ButtonBar {
     @FXML
     private Button button_Hilfe;
 
+    public void pressButton(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+/*
     public void pressButtonSearch (javafx.event.ActionEvent actionEvent) throws IOException {
         /**FXMLLoader fxmlSearch = new FXMLLoader(getClass().getResource("Search.fxml"));
         fxmlSearch.setRoot(this);
         fxmlSearch.setController(this);*/
         //Parent root = FXMLLoader.load(getClass().getResource("Search.fxml"));
 
-
+/*
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("Search.fxml"));
         Parent root = loader.load();
@@ -153,6 +166,5 @@ public class ButtonBar {
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-    }
-
+    }*/
 }
