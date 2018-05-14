@@ -2,12 +2,19 @@ package eu.iums.barou.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Parks {
 
@@ -113,48 +120,101 @@ public class Parks {
     @FXML
     private Button button_ParksOben;
 
-    @FXML
-    void buttonPressedBack(ActionEvent event) {
 
-    }
+    public void buttonPressedBack(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
+        Scene scene = new Scene(parent);
 
-    @FXML
-    void buttonPressedFilter(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedHelp(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedHome(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedLanguage(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedLimitation(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedParks(ActionEvent event) {
-
-    }
-
-    @FXML
-    void buttonPressedRoute(ActionEvent event) {
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
 
     }
 
 
+    public void buttonPressedFilter(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
+        Scene scene = new Scene(parent);
 
-    public void buttonPressedSearch(ActionEvent actionEvent) {
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+    public void buttonPressedHelp(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+    public void buttonPressedHome(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+    public void buttonPressedLanguage(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+   public void buttonPressedLimitation(ActionEvent event) throws IOException {
+       Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
+       Scene scene = new Scene(parent);
+
+       Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+       window.setScene(scene);
+       window.show();
+   }
+
+
+    public void buttonPressedParks(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+    public void buttonPressedRoute(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+    }
+
+
+
+    public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
+            Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
+            Scene scene = new Scene(parent);
+
+            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
     }
 }

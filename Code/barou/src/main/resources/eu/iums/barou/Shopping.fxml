@@ -13,9 +13,10 @@
 <?import com.sothawo.mapjfx.MapView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Filter.Shopping">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Shopping">
 <AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Shopping">
    <children>
+      <Button id="button_GastronomieLight" fx:id="button_GastronomieLight" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7" onAction="#buttonPressedGastronomie">
        <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
 
        <Button id="button_GastronomieLight" fx:id="button_GastronomieLight" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
@@ -23,42 +24,43 @@
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button id="button_GesundheitLight" fx:id="button_GesundheitLight" layoutX="463.0" layoutY="600.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gesundheit" textFill="#d7d7d7">
+      <Button id="button_GesundheitLight" fx:id="button_GesundheitLight" layoutX="463.0" layoutY="600.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Gesundheit" textFill="#d7d7d7" onAction="#buttonPressedHealth">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button id="button_KulturLight" fx:id="button_KulturLight" layoutX="679.0" layoutY="600.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Kultur" textFill="#d7d7d7">
+      <Button id="button_KulturLight" fx:id="button_KulturLight" layoutX="679.0" layoutY="600.0" minHeight="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900; -fx-opacity: 70%;" text="Kultur" textFill="#d7d7d7" onAction="#buttonPressedCulture">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button id="button_UnterhaltungLight" fx:id="button_UnterhaltungLight" layoutX="898.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7">
+      <Button id="button_UnterhaltungLight" fx:id="button_UnterhaltungLight" layoutX="898.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7" onAction="#buttonPressedEntertainment">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
       <Group id="button_group_UnterpunkteEinkaufen" fx:id="button_group_EinkaufenOben" layoutX="245.0" layoutY="338.0">
          <children>
-            <Button id="button_Drogerie" fx:id="button_DrogerieOben" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Drogerie" textFill="#d7d7d7">
+            <Button id="button_Drogerie" fx:id="button_DrogerieOben" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Drogerie" textFill="#d7d7d7" onAction="#buttonPressedDrogerie">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Kleidung" fx:id="button_KleidungOben" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kleidung" textFill="#d7d7d7">
+            <Button id="button_Kleidung" fx:id="button_KleidungOben" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kleidung" textFill="#d7d7d7" onAction="#buttonPressedKleider">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_BioLaden" fx:id="button_BioLadenOben" layoutY="102.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bio-Laden" textFill="#d7d7d7">
+            <Button id="button_BioLaden" fx:id="button_BioLadenOben" layoutY="102.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bio-Laden" textFill="#d7d7d7" onAction="#buttonPressedBioLaden">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_BäckerMetzger" fx:id="button_BäckerMetzgerOben" layoutY="155.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textFill="#d7d7d7">
+            <Button id="button_BäckerMetzger" fx:id="button_BäckerMetzgerOben" layoutY="155.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Bäcker/Metzger" textFill="#d7d7d7" onAction="#buttonPressedMetzger">
+            </Button>
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Lebensmittel" fx:id="button_LebensmittelOben" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Lebensmittel" textFill="#d7d7d7">
+            <Button id="button_Lebensmittel" fx:id="button_LebensmittelOben" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Lebensmittel" textFill="#d7d7d7" onAction="#buttonPressedFood">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -113,7 +115,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedSearch">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -132,7 +134,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedFilter">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -151,7 +153,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedLimitation">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -170,7 +172,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedRoute">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -189,7 +191,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedHome">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -208,7 +210,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedLanguage">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -227,7 +229,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedHelp">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -244,7 +246,7 @@
                   <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7" onAction="#buttonPressedBack">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
