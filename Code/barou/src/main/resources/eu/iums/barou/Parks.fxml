@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Imbiss">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Parks">
    <children>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="690.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
@@ -18,7 +18,7 @@
                <children>
                   <ImageView id="image_Suche" fx:id="image_Suche" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/suche1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/suche1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Suche" fx:id="label_Suche" layoutX="39.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Suche" textFill="#d7d7d7">
@@ -26,7 +26,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buttonPressedSearch" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -37,7 +37,7 @@
                <children>
                   <ImageView id="image_Filter" fx:id="image_Filter" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/filter1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/filter1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Filter" fx:id="label_Filter" layoutX="42.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Filter" textFill="#d7d7d7">
@@ -45,7 +45,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#buttonPressedFilter" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -56,7 +56,7 @@
                <children>
                   <ImageView id="image_Einschränkung" fx:id="image_Einschränkung" fitHeight="90.0" fitWidth="70.0" layoutX="37.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/rollstuhl1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/rollstuhl1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Einschränkung" fx:id="label_Einschränkung" layoutY="84.0" style="-fx-background-color: #669900;" text="Einschränkungen" textFill="#d7d7d7">
@@ -64,7 +64,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Einschränkung" layoutX="5.0" mnemonicParsing="false" onAction="#buttonPressedLimitation" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -75,7 +75,7 @@
                <children>
                   <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/Route1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/Route1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Route" fx:id="label_Route" layoutX="42.0" layoutY="81.0" style="-fx-background-color: #669900;" text="Route" textFill="#d7d7d7">
@@ -83,7 +83,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" onAction="#buttonPressedRoute" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -94,7 +94,7 @@
                <children>
                   <ImageView id="image_Home" fx:id="image_Home" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/home1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/home1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Home" fx:id="label_Home" layoutX="41.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Home" textFill="#d7d7d7">
@@ -102,7 +102,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Home" mnemonicParsing="false" onAction="#buttonPressedHome" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -113,7 +113,7 @@
                <children>
                   <ImageView id="image_Sprache" fx:id="image_Sprache" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/flagge1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/flagge1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Sprache" fx:id="label_Sprache" layoutX="33.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Sprache" textFill="#d7d7d7">
@@ -121,7 +121,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Sprache" mnemonicParsing="false" onAction="#buttonPressedLanguage" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -132,7 +132,7 @@
                <children>
                   <ImageView id="image_Hilfe" fx:id="image_Hilfe" fitHeight="80.0" fitWidth="70.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/hilfe1.png" />
+                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/hilfe1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Hilfe" fx:id="Label_Hilfe" layoutX="43.0" layoutY="86.0" style="-fx-background-color: #669900;" text="Hilfe" textFill="#d7d7d7">
@@ -140,7 +140,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Hilfe" layoutY="2.0" mnemonicParsing="false" onAction="#buttonPressedHelp" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -154,17 +154,17 @@
             <Rectangle id="rechteck_80x80" fx:id="rechteck_greenzurück" arcHeight="5.0" arcWidth="5.0" fill="#669900" height="80.0" stroke="#669900" strokeType="INSIDE" width="80.0" />
             <ImageView id="image_pfeil" fx:id="image_Zurück" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/pfeil1.png" />
+                  <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" onAction="#buttonPressedBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
-      <Button id="button_Imbiss" fx:id="button_ImbissOben" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Imbiss" textFill="#d7d7d7">
+      <Button id="button_Parks" fx:id="button_ParksOben" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" onAction="#buttonPressedParks" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Parks" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>

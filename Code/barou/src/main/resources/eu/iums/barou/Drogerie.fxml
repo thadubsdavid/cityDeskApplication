@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Imbiss">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.Drogerie">
    <children>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="690.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
@@ -164,7 +164,7 @@
             </Button>
          </children>
       </Group>
-      <Button id="button_Imbiss" fx:id="button_ImbissOben" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Imbiss" textFill="#d7d7d7">
+      <Button id="button_Drogerie" fx:id="button_DrogerieOben" layoutX="245.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Drogerie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>

@@ -149,7 +149,7 @@
             </Group>
          </children>
       </AnchorPane>
-      <Group id="button_group_Zurueckpfeil" fx:id="button_group_Zurück" layoutX="1129.0" layoutY="590.0">
+      <Group id="button_group_Zurueckpfeil" fx:id="button_group_Zurück" layoutX="1109.0" layoutY="570.0">
          <children>
             <Rectangle id="rechteck_80x80" fx:id="rechteck_greenzurück" arcHeight="5.0" arcWidth="5.0" fill="#669900" height="80.0" stroke="#669900" strokeType="INSIDE" width="80.0" />
             <ImageView id="image_pfeil" fx:id="image_Zurück" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
