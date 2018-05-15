@@ -1,5 +1,6 @@
 package eu.iums.barou.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
@@ -157,4 +158,54 @@ public class Entertainment {
     @FXML
     private Button button_Zurück;
 
+    public void buttonPressedGastronomy(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedShopping(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedHealth(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedCulture(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedSchwimmbad(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedZoo(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedTheater(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedSinema(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedEntertainment(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedSearch(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedFilter(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedLimitations(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedRoute(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedHome(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedLanguage(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedHelp(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedBack(ActionEvent actionEvent) {
+    }
 }
