@@ -1,4 +1,4 @@
-package eu.iums.barou.controllers;
+package eu.iums.barou.controllers.Filter;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
