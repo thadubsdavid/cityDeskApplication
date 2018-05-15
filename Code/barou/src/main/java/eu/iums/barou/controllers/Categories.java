@@ -185,4 +185,13 @@ public class Categories {
             window.show();
 
     }
+
+    public void pressButtonBack(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
 }
