@@ -110,7 +110,7 @@
                <children>
                   <ImageView id="image_Suche" fx:id="image_Suche" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/suche1.png" />
+                        <Image url="@Pictures/suche1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Suche" fx:id="label_Suche" layoutX="39.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Suche" textFill="#d7d7d7" >
@@ -129,7 +129,7 @@
                <children>
                   <ImageView id="image_Filter" fx:id="image_Filter" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/filter1.png" />
+                        <Image url="@Pictures/filter1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Filter" fx:id="label_Filter" layoutX="42.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Filter" textFill="#d7d7d7">
@@ -148,7 +148,7 @@
                <children>
                   <ImageView id="image_Einschränkung" fx:id="image_Einschränkung" fitHeight="90.0" fitWidth="70.0" layoutX="37.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/rollstuhl1.png" />
+                        <Image url="@Pictures/rollstuhl1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Einschränkung" fx:id="label_Einschränkung" layoutY="84.0" style="-fx-background-color: #669900;" text="Einschränkungen" textFill="#d7d7d7">
@@ -167,7 +167,7 @@
                <children>
                   <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/Route1.png" />
+                        <Image url="@Pictures/Route1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Route" fx:id="label_Route" layoutX="42.0" layoutY="81.0" style="-fx-background-color: #669900;" text="Route" textFill="#d7d7d7">
@@ -186,7 +186,7 @@
                <children>
                   <ImageView id="image_Home" fx:id="image_Home" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/home1.png" />
+                        <Image url="@Pictures/home1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Home" fx:id="label_Home" layoutX="41.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Home" textFill="#d7d7d7">
@@ -205,7 +205,7 @@
                <children>
                   <ImageView id="image_Sprache" fx:id="image_Sprache" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/flagge1.png" />
+                        <Image url="@Pictures/flagge1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Sprache" fx:id="label_Sprache" layoutX="33.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Sprache" textFill="#d7d7d7">
@@ -224,7 +224,7 @@
                <children>
                   <ImageView id="image_Hilfe" fx:id="image_Hilfe" fitHeight="80.0" fitWidth="70.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/hilfe1.png" />
+                        <Image url="@Pictures/hilfe1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Hilfe" fx:id="Label_Hilfe" layoutX="43.0" layoutY="86.0" style="-fx-background-color: #669900;" text="Hilfe" textFill="#d7d7d7">

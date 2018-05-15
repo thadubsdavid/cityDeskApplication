@@ -14,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Parks {
@@ -125,7 +126,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -136,7 +137,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -147,7 +148,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -158,7 +159,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -169,7 +170,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -180,7 +181,7 @@ public class Parks {
        Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
        Scene scene = new Scene(parent);
 
-       Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+       Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
        window.setScene(scene);
        window.show();
    }
@@ -190,7 +191,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 
@@ -201,7 +202,7 @@ public class Parks {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
 

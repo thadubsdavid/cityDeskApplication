@@ -14,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Museum {
@@ -125,7 +126,8 @@ public class Museum {
        Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
        Scene scene = new Scene(parent);
 
-       Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+
+       Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
        window.setScene(scene);
        window.show();
 

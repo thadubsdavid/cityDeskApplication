@@ -135,7 +135,7 @@ public class Categories {
     @FXML
     private Button button_Zurück;
 
-    public void pressButtonGastronomy(ActionEvent actionEvent) throws IOException {
+    public void buttonPressedGastronomy(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));
         Scene scene = new Scene(parent);
 
@@ -144,7 +144,7 @@ public class Categories {
         window.show();
     }
 
-    public void pressButtonShopping(ActionEvent actionEvent) throws IOException {
+    public void buttonPressedShopping(ActionEvent actionEvent) throws IOException {
             Parent parent = FXMLLoader.load(getClass().getResource("../Shopping.fxml"));
             Scene scene = new Scene(parent);
 
@@ -155,7 +155,7 @@ public class Categories {
 
 
 
-    public void pressButtonHealth(ActionEvent actionEvent) throws IOException {
+    public void buttonPressedHealth(ActionEvent actionEvent) throws IOException {
 
             Parent parent = FXMLLoader.load(getClass().getResource("/Health.fxml"));
             Scene scene = new Scene(parent);
@@ -166,7 +166,7 @@ public class Categories {
 
     }
 
-    public void pressButtonCulture(ActionEvent actionEvent) throws IOException {
+    public void buttonPressedCulture(ActionEvent actionEvent) throws IOException {
             Parent parent = FXMLLoader.load(getClass().getResource("../Culture.fxml"));
             Scene scene = new Scene(parent);
 
@@ -176,7 +176,7 @@ public class Categories {
 
     }
 
-    public void pressButtonEntertainment(ActionEvent actionEvent) throws IOException {
+    public void buttonPressedEntertainment(ActionEvent actionEvent) throws IOException {
             Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
             Scene scene = new Scene(parent);
 

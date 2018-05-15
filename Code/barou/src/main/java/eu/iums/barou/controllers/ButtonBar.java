@@ -120,7 +120,7 @@ public class ButtonBar {
     @FXML
     private Button button_Hilfe;
 
-    public void pressButtonSearch(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedSearch(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
 
@@ -129,7 +129,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonHelp(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedHelp(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);
 
@@ -138,7 +138,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonLanguage(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedLanguage(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
 
@@ -147,7 +147,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonHome(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedHome(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);
 
@@ -156,7 +156,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonRoute(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedRoute(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
 
@@ -165,7 +165,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonLimitations(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedLimitations(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
         Scene scene = new Scene(parent);
 
@@ -174,7 +174,7 @@ public class ButtonBar {
         window.show();
     }
 
-    public void pressButtonFilter(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedFilter(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Categories.fxml"));
         Scene scene = new Scene(parent);
 

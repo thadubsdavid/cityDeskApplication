@@ -14,12 +14,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Shopping">
-<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Shopping">
    <children>
       <Button id="button_GastronomieLight" fx:id="button_GastronomieLight" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7" onAction="#buttonPressedGastronomie">
        <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
 
-       <Button id="button_GastronomieLight" fx:id="button_GastronomieLight" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" opacity="0.7" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
@@ -107,7 +105,7 @@
                <children>
                   <ImageView id="image_Suche" fx:id="image_Suche" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../../drive-download-20180502T134049Z-001/suche1.png" />
+                        <Image url="@Pictures/suche1.png" />
                      </image>
                   </ImageView>
                   <Label id="text_Suche" fx:id="label_Suche" layoutX="39.0" layoutY="84.0" style="-fx-background-color: #669900;" text="Suche" textFill="#d7d7d7">

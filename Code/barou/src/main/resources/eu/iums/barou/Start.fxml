@@ -18,7 +18,7 @@
 
       <ImageView id="image_Standort" fx:id="image_marker" fitHeight="80.0" fitWidth="30.0" layoutX="705.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../../drive-download-20180502T134049Z-001/marker1.png" />
+            <Image url="@Pictures/suche1.png" />
          </image>
       </ImageView>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
