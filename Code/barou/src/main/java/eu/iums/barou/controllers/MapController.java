@@ -32,5 +32,6 @@ public class MapController {
         mapView.setCenter(coordKarlsruheHO);
         mapView.setZoom(14);
         mapView.initialize();
+
     }
 }

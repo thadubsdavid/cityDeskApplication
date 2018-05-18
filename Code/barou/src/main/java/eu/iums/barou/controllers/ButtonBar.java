@@ -119,6 +119,10 @@ public class ButtonBar {
 
     @FXML
     private Button button_Hilfe;
+    @FXML
+    protected void initialize(){
+
+    }
 
     public void buttonPressedSearch(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));

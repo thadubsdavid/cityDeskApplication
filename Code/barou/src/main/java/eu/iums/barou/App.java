@@ -1,6 +1,8 @@
 package eu.iums.barou;
 
+import com.sothawo.mapjfx.Coordinate;
 import eu.iums.barou.controllers.Language;
+import eu.iums.barou.model.State;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,8 +23,13 @@ public class App extends javafx.application.Application {
 
 
     public static void main(String[] args) {
+
+        State.getInstance().setStartpunkt(new Coordinate(48.993165,8.400514));
+
         launch(args);
+
     }
+
 
     /**
      * Initialize JavaFX application and main window

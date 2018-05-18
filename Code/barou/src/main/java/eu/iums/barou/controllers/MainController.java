@@ -19,13 +19,14 @@ public class MainController {
     private static final Coordinate coordKarlsruheHO = new Coordinate(49.01235, 8.38557);
 
     @FXML
-    private Parent mapView;
+    private Parent mapVieww;
 
     @FXML
     private MapController mapController;
 
     @FXML
     protected void initialize() {
+
         // TODO
 
     }
