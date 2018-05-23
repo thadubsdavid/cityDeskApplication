@@ -32,7 +32,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buttonPressedSearch" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Suche" alignment="BOTTOM_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedSearch" >
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -51,7 +51,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#buttonPressedFilter" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
+                  <Button id="button_134x107_transparent" fx:id="button_Filter" alignment="BASELINE_CENTER" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0"  onAction="#buttonPressedFilter">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>
@@ -163,14 +163,14 @@
                   <Image url="@Pictures/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" onAction="#buttonPressedBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false"  opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7" onAction="#buttonPresseBack">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
-      <Button id="button_Kunst" fx:id="button_KunstOben" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" onAction="#buttonPressedArt" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7">
+      <Button id="button_Kunst" fx:id="button_KunstOben" layoutX="679.0" layoutY="600.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kunst" textFill="#d7d7d7" onAction="#buttonPressedArt">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
