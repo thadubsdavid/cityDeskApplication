@@ -2,25 +2,24 @@ package eu.iums.barou.model;
 
 public class Verkehrsmittel extends Strecke {
 
-    private String name;
-    private Haltestellen linienverlauf;
+    private String Name;
+    private Haltestellen Linienverlauf;
 
+    @Override
     public String getName() {
-        return name;
+        return Name;
     }
 
+    @Override
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public Haltestellen getLinienverlauf() {
-        return linienverlauf;
+        return Linienverlauf;
     }
 
     public void setLinienverlauf(Haltestellen linienverlauf) {
-        this.linienverlauf = linienverlauf;
+        Linienverlauf = linienverlauf;
     }
-
-
-
 }

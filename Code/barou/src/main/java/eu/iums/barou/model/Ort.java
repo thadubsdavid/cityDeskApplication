@@ -4,25 +4,22 @@ import javax.xml.stream.Location;
 
 public class Ort {
 
-    private Location koordinaten;
-    private String name;
+    private Location Koordinaten;
+    private String Name;
 
     public Location getKoordinaten() {
-        return koordinaten;
+        return Koordinaten;
     }
 
     public void setKoordinaten(Location koordinaten) {
-        this.koordinaten = koordinaten;
+        Koordinaten = koordinaten;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
-
-
-
 }

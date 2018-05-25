@@ -5,7 +5,7 @@ import javax.xml.stream.Location;
 public class Haltestellen extends Ort {
 
     private Location Koordinaten;
-    private String name;
+    private String Name;
     private Boolean Barrierefreiheit;
 
     @Override
@@ -20,12 +20,12 @@ public class Haltestellen extends Ort {
 
     @Override
     public String getName() {
-        return name;
+        return Name;
     }
 
     @Override
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public Boolean getBarrierefreiheit() {
@@ -35,6 +35,4 @@ public class Haltestellen extends Ort {
     public void setBarrierefreiheit(Boolean barrierefreiheit) {
         Barrierefreiheit = barrierefreiheit;
     }
-
-
 }

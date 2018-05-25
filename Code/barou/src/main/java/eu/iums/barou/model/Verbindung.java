@@ -3,40 +3,33 @@ package eu.iums.barou.model;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-public class Verbindung {
+public class Verbindung extends POI {
 
-    private Haltestellen Start;
-    private Haltestellen Ziel;
-    private ZonedDateTime Ankunftszeit;
+    private Haltestellen Abfahrtsort;
+    private Haltestellen Ankunftsort;
     private ZonedDateTime Abfahrtszeit;
-    private Haltestellen zwischenhalt;
+    private ZonedDateTime Ankunftszeit;
+    private ZonedDateTime Fahrtdauer;
+    private Haltestellen Zwischenhalte;
     private List<Haltestellen> Umstiege;
-    private Double Preis;
-    private List<Integer> waben;
-    private List<Strecke> teilstrecke;
+    private List<Integer> Waben;
+    private List<Strecke> Teilstrecke;
+    private List<Float> Preis;
 
-    public Haltestellen getStart() {
-        return Start;
+    public Haltestellen getAbfahrtsort() {
+        return Abfahrtsort;
     }
 
-    public void setStart(Haltestellen start) {
-        Start = start;
+    public void setAbfahrtsort(Haltestellen abfahrtsort) {
+        Abfahrtsort = abfahrtsort;
     }
 
-    public Haltestellen getZiel() {
-        return Ziel;
+    public Haltestellen getAnkunftsort() {
+        return Ankunftsort;
     }
 
-    public void setZiel(Haltestellen ziel) {
-        Ziel = ziel;
-    }
-
-    public ZonedDateTime getAnkunftszeit() {
-        return Ankunftszeit;
-    }
-
-    public void setAnkunftszeit(ZonedDateTime ankunftszeit) {
-        Ankunftszeit = ankunftszeit;
+    public void setAnkunftsort(Haltestellen ankunftsort) {
+        Ankunftsort = ankunftsort;
     }
 
     public ZonedDateTime getAbfahrtszeit() {
@@ -47,12 +40,28 @@ public class Verbindung {
         Abfahrtszeit = abfahrtszeit;
     }
 
-    public Haltestellen getZwischenhalt() {
-        return zwischenhalt;
+    public ZonedDateTime getAnkunftszeit() {
+        return Ankunftszeit;
     }
 
-    public void setZwischenhalt(Haltestellen zwischenhalt) {
-        this.zwischenhalt = zwischenhalt;
+    public void setAnkunftszeit(ZonedDateTime ankunftszeit) {
+        Ankunftszeit = ankunftszeit;
+    }
+
+    public ZonedDateTime getFahrtdauer() {
+        return Fahrtdauer;
+    }
+
+    public void setFahrtdauer(ZonedDateTime fahrtdauer) {
+        Fahrtdauer = fahrtdauer;
+    }
+
+    public Haltestellen getZwischenhalte() {
+        return Zwischenhalte;
+    }
+
+    public void setZwischenhalte(Haltestellen zwischenhalte) {
+        Zwischenhalte = zwischenhalte;
     }
 
     public List<Haltestellen> getUmstiege() {
@@ -63,29 +72,27 @@ public class Verbindung {
         Umstiege = umstiege;
     }
 
-    public Double getPreis() {
-        return Preis;
-    }
-
-    public void setPreis(Double preis) {
-        Preis = preis;
-    }
-
     public List<Integer> getWaben() {
-        return waben;
+        return Waben;
     }
 
     public void setWaben(List<Integer> waben) {
-        this.waben = waben;
+        Waben = waben;
     }
 
     public List<Strecke> getTeilstrecke() {
-        return teilstrecke;
+        return Teilstrecke;
     }
 
     public void setTeilstrecke(List<Strecke> teilstrecke) {
-        this.teilstrecke = teilstrecke;
+        Teilstrecke = teilstrecke;
     }
 
+    public List<Float> getPreis() {
+        return Preis;
+    }
 
+    public void setPreis(List<Float> preis) {
+        Preis = preis;
+    }
 }

@@ -6,49 +6,49 @@ public class Strecke extends Verbindung {
 
     private Ort Startpunkt;
     private Ort Zielpunkt;
-    private ZonedDateTime startzeit;
-    private ZonedDateTime endzeit;
-    private Verkehrsmittel modalität;
+    private ZonedDateTime Startzeit;
+    private ZonedDateTime Endzeit;
+    private Verkehrsmittel Verkehrsmittel;
     private Float LaengeinM;
 
-    /**public Ort getStart() {
+    public Ort getStartpunkt() {
         return Startpunkt;
     }
 
-    public void setStart(Ort start) {
-        this.Startpunkt = start;
+    public void setStartpunkt(Ort startpunkt) {
+        Startpunkt = startpunkt;
     }
 
-    public Ort getZiel() {
+    public Ort getZielpunkt() {
         return Zielpunkt;
     }
 
-    public void setZiel(Ort ziel) {
-        this.Zielpunkt = ziel;
+    public void setZielpunkt(Ort zielpunkt) {
+        Zielpunkt = zielpunkt;
     }
 
     public ZonedDateTime getStartzeit() {
-        return startzeit;
+        return Startzeit;
     }
 
     public void setStartzeit(ZonedDateTime startzeit) {
-        this.startzeit = startzeit;
+        Startzeit = startzeit;
     }
 
     public ZonedDateTime getEndzeit() {
-        return endzeit;
+        return Endzeit;
     }
 
     public void setEndzeit(ZonedDateTime endzeit) {
-        this.endzeit = endzeit;
+        Endzeit = endzeit;
     }
 
-    public Verkehrsmittel getModalität() {
-        return modalität;
+    public eu.iums.barou.model.Verkehrsmittel getVerkehrsmittel() {
+        return Verkehrsmittel;
     }
 
-    public void setModalität(Verkehrsmittel modalität) {
-        this.modalität = modalität;
+    public void setVerkehrsmittel(eu.iums.barou.model.Verkehrsmittel verkehrsmittel) {
+        Verkehrsmittel = verkehrsmittel;
     }
 
     public Float getLaengeinM() {
@@ -58,6 +58,4 @@ public class Strecke extends Verbindung {
     public void setLaengeinM(Float laengeinM) {
         LaengeinM = laengeinM;
     }
-*/
-
 }
