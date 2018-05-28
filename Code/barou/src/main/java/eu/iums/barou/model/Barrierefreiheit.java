@@ -1,6 +1,6 @@
 package eu.iums.barou.model;
 
-public class Barrierefreiheit extends POI {
+public class Barrierefreiheit {
 
     private String Einschraenkung;
     private Boolean Treppe;

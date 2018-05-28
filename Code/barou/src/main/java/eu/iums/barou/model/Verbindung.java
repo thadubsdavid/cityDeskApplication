@@ -3,7 +3,7 @@ package eu.iums.barou.model;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-public class Verbindung extends POI {
+public class Verbindung  {
 
     private Haltestellen Abfahrtsort;
     private Haltestellen Ankunftsort;
@@ -95,4 +95,5 @@ public class Verbindung extends POI {
     public void setPreis(List<Float> preis) {
         Preis = preis;
     }
+
 }

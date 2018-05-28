@@ -30,4 +30,9 @@ public class State {
     public void setStartpunkt(Coordinate startpunkt) {
         this.startpunkt = startpunkt;
     }
+
+    public Ort getOrt () {return ort;}
+
+    public void setOrt (Ort ort) {this.ort = ort;}
+
 }

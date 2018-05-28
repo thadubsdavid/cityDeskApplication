@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.InputMethodEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -56,7 +57,7 @@ public class Route {
         Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
     }
@@ -65,9 +66,32 @@ public class Route {
         Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
         Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
     }
+
+    private String text;
+    public Integer Uhrzeit1;
+    public Integer Uhrzeit2;
+    public Integer Uhrzeit3;
+    public Integer Uhrzeit4;
+    public String Linie1;
+    public String Linie2;
+    public String Linie3;
+    public String Linie4;
+
+
+    public void ZielEingeben(InputMethodEvent inputMethodEvent) {
+        text = text_ZielEingeben.getText();
+        if (text == "Europaplatz") {
+          Uhrzeit1=1207;
+          Uhrzeit2=1210;
+          Linie1="Tram 3";
+          Linie2="Tram 4";
+        }
     }
 
+    public Route() {
+    }
+}

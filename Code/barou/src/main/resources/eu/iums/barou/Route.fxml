@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.sothawo.mapjfx.MapView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
@@ -12,10 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<?import com.sothawo.mapjfx.MapView?>
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Route">
+<AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Route">
    <children>
       <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
 
@@ -33,7 +31,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField id="textfeld_nach" fx:id="text_ZielEingeben" layoutX="95.0" layoutY="107.0" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
+            <TextField id="textfeld_nach" fx:id="text_ZielEingeben" layoutX="95.0" layoutY="107.0" onInputMethodTextChanged="#ZielEingeben" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
             <Group id="button_group_Route" fx:id="button_group_Route" layoutX="439.0" layoutY="43.0">
                <children>
                   <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
@@ -46,7 +44,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" opacity="0.0" prefHeight="107.0" prefWidth="134.0" onAction="#buttonPressedRoute">
+                  <Button id="button_134x107_transparent" fx:id="button_Route" mnemonicParsing="false" onAction="#buttonPressedRoute" opacity="0.0" prefHeight="107.0" prefWidth="134.0">
                      <padding>
                         <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
                      </padding>

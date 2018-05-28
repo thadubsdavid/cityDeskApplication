@@ -13,12 +13,10 @@ public class Bahn extends Verkehrsmittel {
         LaengeinKM = laengeinKM;
     }
 
-    @Override
     public Boolean getBarrierefreiheit() {
         return Barrierefreiheit;
     }
 
-    @Override
     public void setBarrierefreiheit(Boolean barrierefreiheit) {
         Barrierefreiheit = barrierefreiheit;
     }

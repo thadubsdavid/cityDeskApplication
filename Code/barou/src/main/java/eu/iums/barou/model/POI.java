@@ -1,13 +1,16 @@
 package eu.iums.barou.model;
 
+import com.sothawo.mapjfx.Coordinate;
+
 import javax.xml.stream.Location;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class POI extends Ort {
 
-    private Location Koordinaten;
-    private List<String> Name;
+    private ArrayList<Coordinate> Koordinaten;
+    private ArrayList<String> Name;
     private Boolean Barrierefreiheit;
     private String Adresse;
     private Integer Oeffnungszeiten;
@@ -18,24 +21,24 @@ public class POI extends Ort {
     private Character Linien;
 
     @Override
-    public Location getKoordinaten() {
+    public ArrayList<Coordinate> getKoordinaten() {
         return Koordinaten;
     }
 
     @Override
-    public void setKoordinaten(Location koordinaten) {
+    public void setKoordinaten(ArrayList<Coordinate> koordinaten) {
         Koordinaten = koordinaten;
     }
-/*
+
     @Override
-    public List<String> getName() {
+    public ArrayList<String> getName() {
         return Name;
     }
 
-    public void setName(List<String> name) {
+    public void setName(ArrayList<String> name) {
         Name = name;
     }
-*/
+
     public Boolean getBarrierefreiheit() {
         return Barrierefreiheit;
     }
@@ -98,5 +101,9 @@ public class POI extends Ort {
 
     public void setLinien(Character linien) {
         Linien = linien;
+    }
+
+    public POI (String name, Coordinate coordinate){
+        super(name,coordinate);
     }
 }
