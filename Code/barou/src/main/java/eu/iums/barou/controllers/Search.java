@@ -45,7 +45,7 @@ public class Search {
     @FXML
     private ListView<?> listview_Suche;
 
-
+    //Button-Events werden erstellt
     public void pressButtonBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);

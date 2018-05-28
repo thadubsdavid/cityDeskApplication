@@ -32,27 +32,27 @@
          </font></Button>
       <Group id="button_group_UnterpunkteGesundheit" fx:id="button_group_GesundheitOben" layoutX="463.0" layoutY="337.0">
          <children>
-            <Button id="Button_Fitness" fx:id="button_FitnessOben" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Fitness" textFill="#d7d7d7">
+            <Button id="Button_Fitness" fx:id="button_FitnessOben" mnemonicParsing="false" onAction="#buttonPressedFitness" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Fitness" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Therapie" fx:id="button_TherapieOben" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Therapie" textFill="#d7d7d7">
+            <Button id="button_Therapie" fx:id="button_TherapieOben" layoutY="52.0" mnemonicParsing="false" onAction="#buttonPressedTherapy" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Therapie" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Apotheke" fx:id="button_ApothekeOben" layoutY="103.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Apotheke" textFill="#d7d7d7">
+            <Button id="button_Apotheke" fx:id="button_ApothekeOben" layoutY="103.0" mnemonicParsing="false" onAction="#buttonPressedApotheke" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Apotheke" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Arzt" fx:id="button_ArztOben" layoutY="156.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Arzt" textFill="#d7d7d7">
+            <Button id="button_Arzt" fx:id="button_ArztOben" layoutY="156.0" mnemonicParsing="false" onAction="#buttonPressedDoctor" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Arzt" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button id="button_Krankenhaus" fx:id="button_KrankenhausOben" layoutY="208.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Krankenhaus" textFill="#d7d7d7">
+            <Button id="button_Krankenhaus" fx:id="button_KrankenhausOben" layoutY="208.0" mnemonicParsing="false" onAction="#buttonPressedHospital" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Krankenhaus" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -88,7 +88,7 @@
             </Button>
          </children>
       </Group>
-      <Button id="button_Gesundheit" fx:id="button_Gesundheit" layoutX="463.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7">
+      <Button id="button_Gesundheit" fx:id="button_Gesundheit" layoutX="463.0" layoutY="600.0" onAction="#buttonPressedHealth" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7">
          <font>
             <Font name="Arial" size="14.0" />
          </font>

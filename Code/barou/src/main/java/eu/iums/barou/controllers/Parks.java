@@ -121,7 +121,7 @@ public class Parks {
     @FXML
     private Button button_ParksOben;
 
-
+    //Button-Events werden erstellt
     public void buttonPressedBack(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Entertainment.fxml"));
         Scene scene = new Scene(parent);

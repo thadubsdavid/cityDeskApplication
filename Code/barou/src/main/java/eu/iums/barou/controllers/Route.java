@@ -1,5 +1,7 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.barou.model.Verbindung;
+import eu.iums.barou.model.Verkehrsmittel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -53,6 +55,7 @@ public class Route {
     @FXML
     private Button button_Route;
 
+    //Button-Events werden erstellt
     public void buttonPresssedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);
@@ -71,6 +74,7 @@ public class Route {
         window.show();
     }
 
+    //Bei TExteingabe der Haltestelle Verbindung auswählen
     private String text;
     public Integer Uhrzeit1;
     public Integer Uhrzeit2;
@@ -81,6 +85,21 @@ public class Route {
     public String Linie3;
     public String Linie4;
 
+    public void setUhrzeit1(Integer uhrzeit1) {
+        Uhrzeit1 = uhrzeit1;
+    }
+
+    public void setUhrzeit2(Integer uhrzeit2) {
+        Uhrzeit2 = uhrzeit2;
+    }
+
+    public void setLinie1(String linie1) {
+        Linie1 = linie1;
+    }
+
+    public void setLinie2(String linie2) {
+        Linie2 = linie2;
+    }
 
     public void ZielEingeben(InputMethodEvent inputMethodEvent) {
         text = text_ZielEingeben.getText();
@@ -89,8 +108,14 @@ public class Route {
           Uhrzeit2=1210;
           Linie1="Tram 3";
           Linie2="Tram 4";
+          setUhrzeit1(Uhrzeit1);
+          setUhrzeit2(Uhrzeit2);
+          setLinie1(Linie1);
+          setLinie2(Linie2);
         }
     }
+
+
 
     public Route() {
     }

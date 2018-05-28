@@ -103,6 +103,7 @@ public class Start {
     @FXML
     private Button button_Hilfe;
 
+    //Button-Events werden erstellt
     public void buttonPressedSearch(ActionEvent actionEvent) {
     }
 

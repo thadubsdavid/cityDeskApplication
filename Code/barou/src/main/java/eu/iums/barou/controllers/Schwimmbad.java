@@ -120,6 +120,7 @@ public class Schwimmbad {
     @FXML
     private Button button_SchwimmbadOben;
 
+    //Button-Events werden erstellt
     public void buttenPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);

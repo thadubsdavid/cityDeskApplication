@@ -215,6 +215,24 @@ public class RoutingInformations {
     @FXML
     private Button button_Zurück;
 
+    public TextField getText_Uhrzeit1() {
+        return text_Uhrzeit1;
+    }
+
+    public TextField getText_Uhrzeit2() {
+        return text_Uhrzeit2;
+    }
+
+    public TextField getText_Verbindung1() {
+        return text_Verbindung1;
+    }
+
+    public TextField getText_Verbindung2() {
+        return text_Verbindung2;
+    }
+
+
+    //Button-Events werden erstellt
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
@@ -223,7 +241,6 @@ public class RoutingInformations {
         window.setScene(scene);
         window.show();
     }
-
 
     public void buttonPressedInfo1(ActionEvent actionEvent) {
 

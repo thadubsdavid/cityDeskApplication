@@ -165,6 +165,7 @@ public class Entertainment {
     @FXML
     private Button button_Zurück;
 
+    //Button-Events werden erstellt
     public void buttonPressedGastronomy(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));
         Scene scene = new Scene(parent);

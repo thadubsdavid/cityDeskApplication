@@ -120,6 +120,7 @@ public class Cafe {
     @FXML
     private Button button_Zurück;
 
+    //Button-Events werden erstellt
     public void buttonPressedCafe(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Cafe.fxml"));
         Scene scene = new Scene(parent);

@@ -124,6 +124,7 @@ public class ButtonBar {
 
     }
 
+    //Button-Events werden erstellt
     public void buttonPressedSearch(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);

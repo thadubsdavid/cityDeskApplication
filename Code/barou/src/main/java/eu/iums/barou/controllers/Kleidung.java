@@ -120,6 +120,7 @@ public class Kleidung {
     @FXML
     private Button button_Zurück;
 
+    //Button-Events werden erstellt
     public void buttonPressedKleidung(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Shopping.fxml"));
         Scene scene = new Scene(parent);

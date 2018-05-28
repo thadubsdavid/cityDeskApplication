@@ -120,6 +120,7 @@ public class Theater {
     @FXML
     private Button button_TheaterOben;
 
+    //Button-Events werden erstellt
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);

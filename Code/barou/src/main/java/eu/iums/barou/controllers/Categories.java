@@ -135,6 +135,7 @@ public class Categories {
     @FXML
     private Button button_Zurück;
 
+    //Button-Events werden erstellt
     public void buttonPressedGastronomy(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));
         Scene scene = new Scene(parent);
@@ -153,17 +154,13 @@ public class Categories {
             window.show();
         }
 
-
-
     public void buttonPressedHealth(ActionEvent actionEvent) throws IOException {
-
             Parent parent = FXMLLoader.load(getClass().getResource("/Health.fxml"));
             Scene scene = new Scene(parent);
 
             Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
             window.setScene(scene);
             window.show();
-
     }
 
     public void buttonPressedCulture(ActionEvent actionEvent) throws IOException {

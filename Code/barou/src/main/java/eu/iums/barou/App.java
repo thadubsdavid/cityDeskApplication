@@ -74,7 +74,6 @@ public class App extends javafx.application.Application {
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
-
         }
 
 
