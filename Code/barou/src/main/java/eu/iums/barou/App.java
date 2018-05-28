@@ -25,44 +25,21 @@ public class App extends javafx.application.Application {
 
     public static void main(String[] args) {
 
+        //Hauptbahnhof KA als Startpunkt definiert
         State.getInstance().setStartpunkt(new Coordinate(48.993165,8.400514));
 
+        //POI-Koordinaten definiert
         State.getInstance().setOrt(new Ort("Schloss",new Coordinate(49.013513, 8.404435)));
-
-        /*
-        State.getInstance().setOrt("Ludwigs",new Coordinate(latitude: 15774, longitude: 4475));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Schlossgarten",new Coordinate(latitude: 23234 , longitude: 5151));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Venice Beach",new Coordinate(latitude: 16683, longitude: 6334));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Hof Apotheke",new Coordinate(latitude: 16647, longitude: 3579));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Dr. med. Raulin",new Coordinate(latitude: 16718, longitude: 1185));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("ZARA",new Coordinate(latitude: 14275, longitude: 1129));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("REWE",new Coordinate(latitude: 16904, longitude: 8538));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Back Factory",new Coordinate(latitude: 16999, longitude: 6900));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Pfälzer Grill",new Coordinate(latitude: 16666, longitude: 5885));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Losteria",new Coordinate(latitude: 15795, longitude: 1760));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-
-        State.getInstance().setOrt("Shots",new Coordinate(latitude: 17332, longitude: 7779));
-        State.getInstance().setStartpunkt(new Coordinate(latitude: 48.993165, longitude:8.400514));
-*/
+        State.getInstance().setOrt(new Ort("Ludwigsplatz",new Coordinate(49.0090370, 8.3962174)));
+        State.getInstance().setOrt(new Ort("Schlossplatz",new Coordinate(49.010809 , 8.403886)));
+        State.getInstance().setOrt(new Ort("VeniceBeach Karlsruhe",new Coordinate(49.0093624, 8.3941599)));
+        State.getInstance().setOrt(new Ort("Hof Apotheke",new Coordinate(49.0097743, 8.3968793)));
+        State.getInstance().setOrt(new Ort("ZARA",new Coordinate(49.0064326, 8.4021150)));
+        State.getInstance().setOrt(new Ort("Rewe City Kaiserstraße",new Coordinate(49.0098935, 8.3919353)));
+        State.getInstance().setOrt(new Ort("Back Factory",new Coordinate(49.0102584, 8.3936435)));
+        State.getInstance().setOrt(new Ort("Pfälzer Grill",new Coordinate(49.009835, 8.3944894)));
+        State.getInstance().setOrt(new Ort("L'Osteria",new Coordinate(49.0089585, 8.4021160)));
+        State.getInstance().setOrt(new Ort("Shotz Blumenstraße",new Coordinate(49.0084830, 8.3961216)));
 
         launch(args);
 
