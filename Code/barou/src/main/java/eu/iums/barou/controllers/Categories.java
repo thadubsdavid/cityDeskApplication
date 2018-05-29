@@ -155,10 +155,11 @@ public class Categories {
         }
 
     public void buttonPressedHealth(ActionEvent actionEvent) throws IOException {
-            Parent parent = FXMLLoader.load(getClass().getResource("/Health.fxml"));
-            Scene scene = new Scene(parent);
+        Parent parent = FXMLLoader.load(getClass().getResource("/Health.fxml"));
+        Scene scene;
+        scene = new Scene(parent);
 
-            Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
             window.setScene(scene);
             window.show();
     }

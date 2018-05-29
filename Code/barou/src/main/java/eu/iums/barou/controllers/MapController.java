@@ -25,7 +25,7 @@ public class MapController {
         try {
             Files.createDirectories(Paths.get(cacheDir));
             offlineCache.setCacheDirectory(cacheDir);
-            offlineCache.setActive(true);
+          //  offlineCache.setActive(true);
         } catch (IOException e) {
         }
         mapView.setMapType(MapType.OSM);

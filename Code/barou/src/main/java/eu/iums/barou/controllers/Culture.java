@@ -203,7 +203,8 @@ public class Culture {
     }
 
     public void buttonPressedParks(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Parks.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Parks.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -212,7 +213,8 @@ public class Culture {
     }
 
     public void buttonPressedArt(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Art.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Art.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

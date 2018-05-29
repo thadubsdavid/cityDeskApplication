@@ -31,7 +31,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField id="textfeld_nach" fx:id="text_ZielEingeben" layoutX="95.0" layoutY="107.0" onInputMethodTextChanged="#ZielEingeben" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
+            <TextField id="textfeld_nach" fx:id="text_ZielEingeben" layoutX="95.0" layoutY="107.0" prefHeight="50.0" prefWidth="323.0" text="Bitte Ziel eingeben" />
             <Group id="button_group_Route" fx:id="button_group_Route" layoutX="439.0" layoutY="43.0">
                <children>
                   <ImageView id="image_Route" fx:id="image_Route" fitHeight="90.0" fitWidth="70.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">

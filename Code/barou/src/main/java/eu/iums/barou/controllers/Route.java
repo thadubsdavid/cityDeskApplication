@@ -19,8 +19,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.ZonedDateTime;
 
-public class Route {
+public class Route extends eu.iums.barou.model.Verkehrsmittel {
 
     @FXML
     private AnchorPane anchorpane_Standard;
@@ -66,7 +67,7 @@ public class Route {
     }
 
     private String text;
-    public Integer Uhrzeit1;
+    public String Uhrzeit1;
     public Integer Uhrzeit2;
     public Integer Uhrzeit3;
     public Integer Uhrzeit4;
@@ -74,6 +75,8 @@ public class Route {
     public String Linie2;
     public String Linie3;
     public String Linie4;
+
+
 
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
@@ -84,35 +87,17 @@ public class Route {
         window.show();
 
         text = text_ZielEingeben.getText();
-        if (text == "Europaplatz") {
-            Uhrzeit1=1207;
-            Uhrzeit2=1210;
+       if (text == "Europaplatz") {
+            Uhrzeit1="1207";
             Linie1="Tram 3";
-            Linie2="Tram 4";
             setUhrzeit1(Uhrzeit1);
-            setUhrzeit2(Uhrzeit2);
             setLinie1(Linie1);
-            setLinie2(Linie2);
         }
     }
 
     //Bei TExteingabe der Haltestelle Verbindung auswählen
 
 
-    public void setUhrzeit1(Integer uhrzeit1) {
-        Uhrzeit1 = uhrzeit1;
-    }
 
-    public void setUhrzeit2(Integer uhrzeit2) {
-        Uhrzeit2 = uhrzeit2;
-    }
-
-    public void setLinie1(String linie1) {
-        Linie1 = linie1;
-    }
-
-    public void setLinie2(String linie2) {
-        Linie2 = linie2;
-    }
 
 }

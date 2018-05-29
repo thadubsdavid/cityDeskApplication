@@ -122,7 +122,8 @@ public class Bar {
 
     //Button-Events werden erstellt
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -131,7 +132,8 @@ public class Bar {
     }
 
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

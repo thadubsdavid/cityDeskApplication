@@ -1,5 +1,7 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.barou.model.Verbindung;
+import eu.iums.barou.model.Verkehrsmittel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +20,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RoutingInformations {
+public class RoutingInformations extends eu.iums.barou.model.Verkehrsmittel {
 
     @FXML
     private AnchorPane anchorpane_Standard;
@@ -215,20 +217,18 @@ public class RoutingInformations {
     @FXML
     private Button button_Zurück;
 
-    public TextField getText_Uhrzeit1() {
-        return text_Uhrzeit1;
-    }
+    public String Uhr1;
+    public String Uhr2;
+    public String Linie1;
+    public String Linie2;
 
-    public TextField getText_Uhrzeit2() {
-        return text_Uhrzeit2;
-    }
 
-    public TextField getText_Verbindung1() {
-        return text_Verbindung1;
-    }
+    public void Name () {
 
-    public TextField getText_Verbindung2() {
-        return text_Verbindung2;
+        Uhr1=getUhrzeit1();
+        Linie1=getLinie1();
+        text_Uhrzeit1.setText(Uhr1);
+        text_Verkehrsmittel1.setText(Linie1);
     }
 
 
@@ -319,5 +319,9 @@ public class RoutingInformations {
     }
 
     public void buttonPressedRight(ActionEvent actionEvent) {
+    }
+
+    public void buttonPressedAnzeigen(ActionEvent actionEvent) {
+        Name();
     }
 }

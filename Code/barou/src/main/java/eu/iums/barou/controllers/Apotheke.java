@@ -123,7 +123,8 @@ public class Apotheke {
 
     //Button-Events werden erstellt
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -132,7 +133,8 @@ public class Apotheke {
     }
 
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -141,7 +143,8 @@ public class Apotheke {
     }
 
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -150,7 +153,8 @@ public class Apotheke {
     }
 
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -159,7 +163,8 @@ public class Apotheke {
     }
 
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -168,7 +173,8 @@ public class Apotheke {
     }
 
     public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -177,7 +183,8 @@ public class Apotheke {
     }
 
     public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -186,7 +193,8 @@ public class Apotheke {
     }
 
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Health.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Health.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -195,7 +203,8 @@ public class Apotheke {
     }
 
     public void buttonPressedApotheke(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Health.fxml"));
+        Parent parent;
+        parent = FXMLLoader.load(getClass().getResource("../Health.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

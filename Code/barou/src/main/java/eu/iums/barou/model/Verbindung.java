@@ -16,6 +16,9 @@ public class Verbindung  {
     private List<Strecke> Teilstrecke;
     private List<Float> Preis;
 
+    private String Uhrzeit1;
+    private String Linie1;
+
     public Haltestellen getAbfahrtsort() {
         return Abfahrtsort;
     }
@@ -95,5 +98,17 @@ public class Verbindung  {
     public void setPreis(List<Float> preis) {
         Preis = preis;
     }
+
+    //Provisorisch für Dummy Daten:
+
+    public void setUhrzeit1(String uhrzeit1) {
+        Uhrzeit1 = uhrzeit1;
+    }
+    public String getUhrzeit1() {return Uhrzeit1; }
+
+    public void setLinie1(String linie1) {Linie1 = linie1;}
+    public String getLinie1() {return Linie1; }
+
+
 
 }
