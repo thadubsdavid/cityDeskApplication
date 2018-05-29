@@ -193,12 +193,4 @@ public class Imbiss {
         window.show();
     }
 
-    public void buttonPressedImbiss(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
 }

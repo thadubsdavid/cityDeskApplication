@@ -65,16 +65,6 @@ public class Route {
         window.show();
     }
 
-    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
-    //Bei TExteingabe der Haltestelle Verbindung auswählen
     private String text;
     public Integer Uhrzeit1;
     public Integer Uhrzeit2;
@@ -84,6 +74,30 @@ public class Route {
     public String Linie2;
     public String Linie3;
     public String Linie4;
+
+    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
+        text = text_ZielEingeben.getText();
+        if (text == "Europaplatz") {
+            Uhrzeit1=1207;
+            Uhrzeit2=1210;
+            Linie1="Tram 3";
+            Linie2="Tram 4";
+            setUhrzeit1(Uhrzeit1);
+            setUhrzeit2(Uhrzeit2);
+            setLinie1(Linie1);
+            setLinie2(Linie2);
+        }
+    }
+
+    //Bei TExteingabe der Haltestelle Verbindung auswählen
+
 
     public void setUhrzeit1(Integer uhrzeit1) {
         Uhrzeit1 = uhrzeit1;
@@ -101,22 +115,4 @@ public class Route {
         Linie2 = linie2;
     }
 
-    public void ZielEingeben(InputMethodEvent inputMethodEvent) {
-        text = text_ZielEingeben.getText();
-        if (text == "Europaplatz") {
-          Uhrzeit1=1207;
-          Uhrzeit2=1210;
-          Linie1="Tram 3";
-          Linie2="Tram 4";
-          setUhrzeit1(Uhrzeit1);
-          setUhrzeit2(Uhrzeit2);
-          setLinie1(Linie1);
-          setLinie2(Linie2);
-        }
-    }
-
-
-
-    public Route() {
-    }
 }
