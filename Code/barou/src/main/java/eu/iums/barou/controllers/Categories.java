@@ -1,5 +1,7 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.wheelmap.api.API;
+import eu.iums.wheelmap.api.RequestModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -192,4 +194,18 @@ public class Categories {
         window.setScene(scene);
         window.show();
     }
+
+
+
+    //Methode zum Aufrufen der Wheelmap-API - Kategorien
+
+    public void Category () {
+        RequestModel.CategoryFilter filter = new RequestModel.CategoryFilter()
+                .withLocale("de");
+        API.categories(filter).whenComplete((response, error) -> {
+            if (response != null) System.out.println(response);
+            else error.printStackTrace();
+        });
+    }
+
 }

@@ -2,9 +2,13 @@ package eu.iums.barou.controllers;
 
 import eu.iums.barou.model.Verbindung;
 import eu.iums.barou.model.Verkehrsmittel;
+import eu.iums.wheelmap.api.API;
+import eu.iums.wheelmap.api.RequestModel;
+import eu.iums.wheelmap.api.Wheelchair;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.BoundingBox;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -17,6 +21,7 @@ import javafx.scene.input.InputMethodEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import org.w3c.dom.traversal.NodeFilter;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
@@ -95,9 +100,22 @@ public class Route extends eu.iums.barou.model.Verkehrsmittel {
         }
     }
 
-    //Bei TExteingabe der Haltestelle Verbindung auswählen
+    //Bei Texteingabe der Haltestelle Verbindung auswählen
 
 
+    //Abrufen einer gefilterten Liste von Knoten
+
+    public void Filter() {
+        RequestModel.NodeFilter filter = new NodeFilter()
+                .withBoundingBox(
+                        new BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
+                .withWheelchair(Wheelchair.Yes)
+                .withSearchQuery("Karlsruhe");
+        API.nodes(filter).whenComplete((response, error) -> {
+            if (response != null) System.out.println(response);
+            else error.printStackTrace();
+        });
+    }
 
 
 }
