@@ -104,7 +104,7 @@ public class Route extends eu.iums.barou.model.Verkehrsmittel {
 
 
     //Abrufen einer gefilterten Liste von Knoten
-
+/*geht noch nicht!
     public void Filter() {
         RequestModel.NodeFilter filter = new NodeFilter()
                 .withBoundingBox(
@@ -116,6 +116,6 @@ public class Route extends eu.iums.barou.model.Verkehrsmittel {
             else error.printStackTrace();
         });
     }
-
+*/
 
 }
