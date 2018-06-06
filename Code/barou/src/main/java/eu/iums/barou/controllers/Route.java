@@ -1,14 +1,8 @@
 package eu.iums.barou.controllers;
 
-import eu.iums.barou.model.Verbindung;
-import eu.iums.barou.model.Verkehrsmittel;
-import eu.iums.wheelmap.api.API;
-import eu.iums.wheelmap.api.RequestModel;
-import eu.iums.wheelmap.api.Wheelchair;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.BoundingBox;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -17,16 +11,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.InputMethodEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import org.w3c.dom.traversal.NodeFilter;
 
 import java.io.IOException;
-import java.time.ZonedDateTime;
 
-public class Route extends eu.iums.barou.model.Verkehrsmittel {
+public class Route {
 
     @FXML
     private AnchorPane anchorpane_Standard;
@@ -91,12 +82,7 @@ public class Route extends eu.iums.barou.model.Verkehrsmittel {
         window.setScene(scene);
         window.show();
 
-        text = text_ZielEingeben.getText();
-       if (text == "Europaplatz") {
-            Uhrzeit1="1207";
-            Linie1="Tram 3";
-            setUhrzeit1(Uhrzeit1);
-            setLinie1(Linie1);
+
         }
     }
 
@@ -118,4 +104,4 @@ public class Route extends eu.iums.barou.model.Verkehrsmittel {
     }
 */
 
-}
+

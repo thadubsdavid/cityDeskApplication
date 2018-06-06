@@ -1,19 +1,12 @@
 package eu.iums.barou;
 
 import com.sothawo.mapjfx.Coordinate;
-import eu.iums.barou.controllers.Language;
-import eu.iums.barou.model.Ort;
-import eu.iums.barou.model.State;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import sun.tools.jar.Main;
-
-import javax.swing.*;
-import java.io.IOException;
 
 /**
  * The main entry point of the application. Initializes the JavaFX UI as well as other required resources and services.
@@ -23,7 +16,7 @@ import java.io.IOException;
 public class App extends javafx.application.Application {
 
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
         //Hauptbahnhof KA als Startpunkt definiert
         State.getInstance().setStartpunkt(new Coordinate(48.993165,8.400514));
@@ -43,7 +36,7 @@ public class App extends javafx.application.Application {
 
         launch(args);
 
-    }
+    }/
 
 
     /**
