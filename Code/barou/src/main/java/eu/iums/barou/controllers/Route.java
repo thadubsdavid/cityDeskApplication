@@ -1,8 +1,12 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.wheelmap.api.API;
+import eu.iums.wheelmap.api.RequestModel;
+import eu.iums.wheelmap.api.Wheelchair;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.BoundingBox;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -14,6 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import org.w3c.dom.traversal.NodeFilter;
 
 import java.io.IOException;
 
@@ -84,17 +89,18 @@ public class Route {
 
 
         }
-    }
+
 
     //Bei Texteingabe der Haltestelle Verbindung auswählen
 
 
     //Abrufen einer gefilterten Liste von Knoten
-/*geht noch nicht!
+
+
     public void Filter() {
-        RequestModel.NodeFilter filter = new NodeFilter()
+        RequestModel.NodeFilter filter = new RequestModel.NodeFilter()
                 .withBoundingBox(
-                        new BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
+                        new RequestModel.BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
                 .withWheelchair(Wheelchair.Yes)
                 .withSearchQuery("Karlsruhe");
         API.nodes(filter).whenComplete((response, error) -> {
@@ -102,6 +108,7 @@ public class Route {
             else error.printStackTrace();
         });
     }
-*/
+}
+
 
 
