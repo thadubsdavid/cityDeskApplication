@@ -1,5 +1,7 @@
 package eu.iums.barou.controllers;
 
+import akka.dispatch.japi;
+import akka.japi.JAPI;
 import eu.iums.wheelmap.api.API;
 import eu.iums.wheelmap.api.RequestModel;
 import eu.iums.wheelmap.api.Wheelchair;
@@ -21,6 +23,9 @@ import javafx.stage.Stage;
 import org.w3c.dom.traversal.NodeFilter;
 
 import java.io.IOException;
+import java.time.ZonedDateTime;
+import java.util.Optional;
+import java.util.concurrent.CompletionStage;
 
 public class Route {
 
@@ -108,6 +113,39 @@ public class Route {
             else error.printStackTrace();
         });
     }
+
+    /*
+
+    public void InformationRequest () {
+        CompletionStage response;
+        response = JAPI.locationInformationRequest(new LocationInformationRequestPayload("Karlsruhe, hoffstrasse 3"));
+        response.whenComplete((result, error) -> {
+            if (result != null) System.out.println(result);
+            else error.printStackTrace();
+        });
+    }
+
+    */
+/*
+    public void Trip () {
+        TripRequestPayload tripRequestPayload = new TripRequestPayload(
+                new LocationContext(LocationRef.withStopPlaceRef("de:08212:7003"), Optional.empty()),
+                new LocationContext(LocationRef.withStopPlaceRef("de:08212:90"), Optional.of(ZonedDateTime.now())),
+                new TripParams()
+                        .withPtModeFilter(new PtModeFilterStructure()
+                                .withPtMode(PtModesEnumeration.TRAM, PtModesEnumeration.BUS))
+                        .withNoElevator(true)
+                        .withIncludeFares(true)
+        );
+        CompletionStage response =
+                JAPI.tripRequest(tripRequestPayload);
+        response.whenComplete((result, error) -> {
+            if (result != null) System.out.println(result);
+            else error.printStackTrace();
+        });
+    }
+
+*/
 }
 
 
