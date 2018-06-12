@@ -2,6 +2,7 @@ package eu.iums.barou.controllers;
 
 import akka.dispatch.japi;
 import akka.japi.JAPI;
+import eu.iums.trias.api.LocationInformationRequestPayload;
 import eu.iums.wheelmap.api.API;
 import eu.iums.wheelmap.api.RequestModel;
 import eu.iums.wheelmap.api.Wheelchair;
@@ -114,8 +115,8 @@ public class Route {
         });
     }
 
-    /*
 
+/*
     public void InformationRequest () {
         CompletionStage response;
         response = JAPI.locationInformationRequest(new LocationInformationRequestPayload("Karlsruhe, hoffstrasse 3"));
@@ -125,7 +126,7 @@ public class Route {
         });
     }
 
-    */
+   */
 /*
     public void Trip () {
         TripRequestPayload tripRequestPayload = new TripRequestPayload(
