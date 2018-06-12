@@ -226,14 +226,6 @@ public class Shopping {
         window.show();
     }
 
-    public void buttonPressedBioLaden(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../BioLaden.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
 
     public void buttonPressedMetzger(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Metzger.fxml"));

@@ -1,6 +1,9 @@
 package eu.iums.barou.controllers;
 
         import eu.iums.barou.App;
+        import eu.iums.wheelmap.api.API;
+        import eu.iums.wheelmap.api.RequestModel;
+        import eu.iums.wheelmap.api.Wheelchair;
         import javafx.embed.swing.JFXPanel;
         import javafx.event.EventHandler;
         import javafx.fxml.FXML;
@@ -188,6 +191,12 @@ public class ButtonBar {
         window.show();
 
     }
+
+    public void buttonPressedGastronomie(javafx.event.ActionEvent actionEvent) throws IOException {
+
+        Filter("Gastronomie");
+
+    }
 /*
     public void pressButtonSearch (javafx.event.ActionEvent actionEvent) throws IOException {
         /**FXMLLoader fxmlSearch = new FXMLLoader(getClass().getResource("Search.fxml"));
@@ -227,4 +236,35 @@ public class ButtonBar {
         stage.setScene(scene);
         stage.show();
     }*/
+
+    public void Filter(String Text) {
+        RequestModel.NodeFilter filter = new RequestModel.NodeFilter()
+                .withBoundingBox(
+                        new RequestModel.BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
+                .withWheelchair(Wheelchair.Yes)
+                .withSearchQuery(Text);
+        API.nodes(filter).whenComplete((response, error) -> {
+            if (response != null) System.out.println(response);
+
+            else error.printStackTrace();
+        });
+    }
+
+    public void buttonPressedEinkaufen(javafx.event.ActionEvent actionEvent) {
+        Filter("Einkaufen");
+
+    }
+
+    public void buttonPressedGesundheit(javafx.event.ActionEvent actionEvent) {
+        Filter("Gesundheit");
+    }
+
+    public void buttonPressedUnterhaltung(javafx.event.ActionEvent actionEvent) {
+        Filter("Unterhaltung");
+    }
+
+    public void buttonPressedKultur(javafx.event.ActionEvent actionEvent) {
+        Filter("Kultur");
+    }
+
 }

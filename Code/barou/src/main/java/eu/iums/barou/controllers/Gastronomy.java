@@ -220,23 +220,6 @@ public class Gastronomy {
         window.show();
     }
 
-    public void buttonPressedBar(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Bar.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void buttonPressedCafe(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Cafe.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
 
     public void buttonPressedGastronomy(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Gastronomy.fxml"));

@@ -203,23 +203,7 @@ public class Health {
         window.show();
     }
 
-    public void buttonPressedApotheke(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Apotheke.fxml"));
-        Scene scene = new Scene(parent);
 
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void buttonPressedDoctor(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Arzt.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
 
     public void buttonPressedHospital(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Krankenhaus.fxml"));
