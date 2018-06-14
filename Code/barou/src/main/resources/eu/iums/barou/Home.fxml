@@ -4,8 +4,6 @@
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -152,14 +150,5 @@
             </Group>
          </children>
       </AnchorPane>
-      <MenuButton layoutX="205.0" layoutY="565.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="80.0" text="Filter" AnchorPane.bottomAnchor="52.0">
-        <items>
-          <MenuItem mnemonicParsing="false" onAction="#buttonPressedGastronomie" text="Gatronomie" />
-          <MenuItem mnemonicParsing="false" onAction="#buttonPressedEinkaufen" text="Einkaufen" />
-           <MenuItem mnemonicParsing="false" onAction="#buttonPressedGesundheit" text="Gesundheit" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedKultur" text="Kultur" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedUnterhaltung" text="Unterhaltung" />
-        </items>
-      </MenuButton>
    </children>
 </AnchorPane>

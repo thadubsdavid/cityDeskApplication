@@ -1,44 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.sothawo.mapjfx.MapView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<?import com.sothawo.mapjfx.MapView?>
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Categories">
+<AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Categories">
    <children>
 
       <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-
-      <Button id="button_Gastronomie" fx:id="button_Gastronomie" layoutX="22.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gastronomie" textFill="#d7d7d7" onAction="#buttonPressedGastronomy">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font></Button>
-      <Button id="button_Einkaufen" fx:id="button_Einkaufen" layoutX="245.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Einkaufen" textFill="#d7d7d7" onAction="#buttonPressedShopping">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font></Button>
-      <Button id="button_Gesundheit" fx:id="button_Gesundheit" layoutX="463.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Gesundheit" textFill="#d7d7d7" onAction="#buttonPressedHealth">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font></Button>
-      <Button id="button_Kultur" fx:id="button_Kultur" layoutX="679.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Kultur" textFill="#d7d7d7" onAction="#buttonPressedCulture">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font></Button>
-      <Button id="button_Unterhaltung" fx:id="button_Unterhaltung" layoutX="898.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #669900;" text="Unterhaltung" textFill="#d7d7d7" onAction="#buttonPressedEntertainment">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
       <AnchorPane id="anchorpane_buttonbar" fx:id="anchorpane_greenbar" layoutY="670.0" prefHeight="140.0" prefWidth="1200.0" style="-fx-background-color: #669900;">
          <children>
             <Group id="button_group_Suche" fx:id="button_group_Suche" layoutX="30.0" layoutY="17.0">
@@ -184,12 +162,21 @@
                   <Image url="@Pictures/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7" onAction="#pressButtonBack">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" onAction="#pressButtonBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
+      <MenuButton layoutX="471.0" layoutY="468.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="287.0" text="Filter">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedGastronomie" text="Gatronomie" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedEinkaufen" text="Einkaufen" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedGesundheit" text="Gesundheit" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedKultur" text="Kultur" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedUnterhaltung" text="Unterhaltung" />
+         </items>
+      </MenuButton>
    </children>
 </AnchorPane>
