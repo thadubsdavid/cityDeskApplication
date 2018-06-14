@@ -313,6 +313,6 @@ public class RoutingInformations {
     public void buttonPressedRight(ActionEvent actionEvent) {
     }
 
-    public void buttonPressedAnzeigen(ActionEvent actionEvent) { ;
+    public void buttonPressedAnzeigen(ActionEvent actionEvent) {
     }
 }

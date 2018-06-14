@@ -192,7 +192,7 @@ public class ButtonBar {
 
     }
 
-    public void buttonPressedGastronomie(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void buttonPressedGastronomie(javafx.event.ActionEvent actionEvent) {
 
         Filter("Gastronomie");
 
