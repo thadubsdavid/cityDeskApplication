@@ -65,7 +65,7 @@ public class Route {
 
     //Button-Events werden erstellt
     public void buttonPresssedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();

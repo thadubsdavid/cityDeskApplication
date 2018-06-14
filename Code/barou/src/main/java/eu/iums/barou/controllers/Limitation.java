@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Informations {
+public class Limitation {
 
     @FXML
     private AnchorPane anchorpane_Standard;
@@ -142,7 +142,7 @@ public class Informations {
 
     //Button-Events werden erstellt
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -169,7 +169,7 @@ public class Informations {
     }
 
     public void buttonPressedLimitation(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -187,7 +187,7 @@ public class Informations {
     }
 
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

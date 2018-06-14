@@ -61,7 +61,7 @@ public class App extends javafx.application.Application {
         //button_Sprache.setOnAction(e -> window.setScene(Language));
 
         FXMLLoader loader = new FXMLLoader();
-        String pfad = "ButtonBar.fxml";
+        String pfad = "Home.fxml";
         loader.setLocation(getClass().getResource(pfad));
         Parent root = loader.load();
         Scene scene = new Scene(root);

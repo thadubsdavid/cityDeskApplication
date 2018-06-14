@@ -22,7 +22,7 @@ package eu.iums.barou.controllers;
         import java.awt.event.ActionEvent;
         import java.io.IOException;
 
-public class ButtonBar {
+public class Home {
 
     @FXML
     private AnchorPane anchorpane_Standard;
@@ -156,7 +156,7 @@ public class ButtonBar {
     }
 
     public void buttonPressedHome(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -174,7 +174,7 @@ public class ButtonBar {
     }
 
     public void buttonPressedLimitations(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

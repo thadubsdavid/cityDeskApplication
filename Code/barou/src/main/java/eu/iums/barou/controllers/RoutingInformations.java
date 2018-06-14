@@ -342,7 +342,7 @@ public class RoutingInformations {
      * @throws IOException
      */
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
