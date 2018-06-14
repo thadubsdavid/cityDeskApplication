@@ -1,7 +1,6 @@
 package eu.iums.barou.model;
 
 import com.sothawo.mapjfx.Coordinate;
-import eu.iums.barou.controllers.POI;
 import eu.iums.barou.controllers.Route;
 
 public class State {
@@ -9,7 +8,6 @@ public class State {
     private  static State instance;
     private Coordinate startpunkt;
 //    private Ort ort;
-    private POI poi;
     private Route route;
 
 
@@ -36,7 +34,5 @@ public class State {
  //   public Ort getOrt () {return ort;}
  //   public void setOrt (Ort ort) {this.ort = ort;}
 
-    public POI getPoi () {return poi;}
-    public void setPoi (POI poi) {this.poi = poi;}
 
 }
