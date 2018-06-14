@@ -16,6 +16,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Get und Set Methoden implementieren.
+ * Verwendung: Wenn Get und Set Methoden aufgerufen werden.
+ *
+ * @author Annika Roeder
+ */
 public class Search {
 
     @FXML
@@ -36,16 +45,40 @@ public class Search {
     @FXML
     private Button button_back;
 
+    @FXML
+    private ListView<?> listview_Suche;
+
+
+    // Klassenspezifische Buttons:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Text setten.
+     * Verwendung: Wenn Text gesettet wird.
+     *
+     * @author Annika Roeder
+     *
+     */
     protected void buttonPressed(){
         String text = text_SucheEingabe.getText();
         text_SucheEingabe.setText(text);
         text_SucheEingabe.clear();
     }
 
-    @FXML
-    private ListView<?> listview_Suche;
+    //Zurueck-Button
 
-    //Button-Events werden erstellt
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Annika Roeder
+     *
+     */
     public void pressButtonBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);

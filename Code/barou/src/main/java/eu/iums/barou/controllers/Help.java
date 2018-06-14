@@ -17,6 +17,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Eine Hilfe für den Nutzer Anzeigen.
+ * Verwendung: Wenn der Hilfe-Button betaetigt wurde.
+ *
+ * @author Vicky Kromer-Schulze
+ *
+ */
 public class Help {
 
     @FXML
@@ -127,7 +137,20 @@ public class Help {
     @FXML
     private Button button_Hilfe;
 
-    //Button-Events werden erstellt
+
+    //Zurueck-Button:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
@@ -137,6 +160,20 @@ public class Help {
         window.show();
     }
 
+
+    //Buttons der Button-Bar:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Suchen-View oeffnen .
+     * Verwendung: Wenn der Suchen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
@@ -146,6 +183,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Filter-View oeffnen .
+     * Verwendung: Wenn der Filter-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
@@ -155,6 +203,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Einschraenkungsgrad-View oeffnen .
+     * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
@@ -164,6 +223,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Routen-View oeffnen .
+     * Verwendung: Wenn der Routen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
@@ -173,6 +243,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Home-View oeffnen .
+     * Verwendung: Wenn der Home-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
@@ -182,6 +263,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Sprachauswahl-View oeffnen .
+     * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
@@ -191,6 +283,17 @@ public class Help {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Hilfe-View oeffnen .
+     * Verwendung: Wenn der Hilfe-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Vicky Kromer-Schulze
+     *
+     */
     public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);

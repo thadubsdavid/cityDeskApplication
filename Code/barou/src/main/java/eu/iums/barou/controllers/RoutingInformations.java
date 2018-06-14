@@ -22,8 +22,8 @@ import java.io.IOException;
 /**
  *
  * Erstelldatum: April 2018
- * Zweck: Aktion bei betaetigen des Zurueck-Buttons.
- * Verwendung: Wenn Zurueck-Button betaetigt wird.
+ * Zweck: Zum anzeigen der Routeninformationen
+ * Verwendung: Wenn nach einer RFoute gescucht wird.
  *
  * @author Markus Linnartz
  *
@@ -235,6 +235,7 @@ public class RoutingInformations {
      * Verwendung: Wenn der Info-Button betaetigt wird.
      *
      * @param actionEvent
+     * @author Markus Linnartz
      */
     public void buttonPressedInfo1(ActionEvent actionEvent) {
     }
@@ -246,6 +247,7 @@ public class RoutingInformations {
      * Verwendung: Wenn linker Info-Button betaetigt wird.
      *
      * @param actionEvent
+     * @author Markus Linnartz
      */
     public void buttonPressedLeft(ActionEvent actionEvent) {
     }
@@ -257,6 +259,7 @@ public class RoutingInformations {
      * Verwendung: Wenn rechter Info-Button betaetigt wird.
      *
      * @param actionEvent
+     * @author Markus Linnartz
      */
     public void buttonPressedRight(ActionEvent actionEvent) {
     }
@@ -268,6 +271,7 @@ public class RoutingInformations {
      * Verwendung: Wenn der Anzeigen-Button betaetigt wird.
      *
      * @param actionEvent
+     * @author Markus Linnartz
      */
     public void buttonPressedAnzeigen(ActionEvent actionEvent) {
     }
@@ -283,6 +287,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
@@ -304,6 +309,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
@@ -322,6 +328,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
@@ -340,6 +347,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
@@ -358,6 +366,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
@@ -376,6 +385,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
@@ -394,6 +404,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
@@ -413,6 +424,7 @@ public class RoutingInformations {
      *
      * @param actionEvent
      * @throws IOException
+     * @author Markus Linnartz
      */
     public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
