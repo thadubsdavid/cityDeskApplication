@@ -18,6 +18,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Aktion bei betaetigen des Zurueck-Buttons.
+ * Verwendung: Wenn Zurueck-Button betaetigt wird.
+ *
+ * @author Markus Linnartz
+ *
+ */
 public class RoutingInformations {
 
     @FXML
@@ -215,16 +225,65 @@ public class RoutingInformations {
     @FXML
     private Button button_Zurück;
 
-    public String Uhr1;
-    public String Uhr2;
-    public String Linie1;
-    public String Linie2;
+
+    // Klassenspezifische Buttons:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des mittleren Info-Buttons.
+     * Verwendung: Wenn der Info-Button betaetigt wird.
+     *
+     * @param actionEvent
+     */
+    public void buttonPressedInfo1(ActionEvent actionEvent) {
+    }
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des linken Info-Buttons.
+     * Verwendung: Wenn linker Info-Button betaetigt wird.
+     *
+     * @param actionEvent
+     */
+    public void buttonPressedLeft(ActionEvent actionEvent) {
+    }
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des rechten Info-Buttons.
+     * Verwendung: Wenn rechter Info-Button betaetigt wird.
+     *
+     * @param actionEvent
+     */
+    public void buttonPressedRight(ActionEvent actionEvent) {
+    }
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des Anzeigen-Buttons.
+     * Verwendung: Wenn der Anzeigen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     */
+    public void buttonPressedAnzeigen(ActionEvent actionEvent) {
+    }
 
 
+    // Zurueck Button:
 
-
-
-    //Button-Events werden erstellt
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
@@ -234,10 +293,18 @@ public class RoutingInformations {
         window.show();
     }
 
-    public void buttonPressedInfo1(ActionEvent actionEvent) {
 
-    }
+    //Buttons auf der Button-Bar:
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Suchen-View oeffnen .
+     * Verwendung: Wenn der Suchen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
@@ -247,6 +314,15 @@ public class RoutingInformations {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Filter-View oeffnen .
+     * Verwendung: Wenn der Filter-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
@@ -256,7 +332,15 @@ public class RoutingInformations {
         window.show();
     }
 
-
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Einschraenkungsgrad-View oeffnen .
+     * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Informations.fxml"));
         Scene scene = new Scene(parent);
@@ -266,7 +350,15 @@ public class RoutingInformations {
         window.show();
     }
 
-
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Routen-View oeffnen .
+     * Verwendung: Wenn der Routen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
@@ -274,11 +366,19 @@ public class RoutingInformations {
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
-        }
+    }
 
-
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Home-View oeffnen .
+     * Verwendung: Wenn der Home-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../ButtonBar.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -286,7 +386,15 @@ public class RoutingInformations {
         window.show();
     }
 
-
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Sprachauswahl-View oeffnen .
+     * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
@@ -297,6 +405,15 @@ public class RoutingInformations {
 
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Hilfe-View oeffnen .
+     * Verwendung: Wenn der Hilfe-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     */
     public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);
@@ -304,15 +421,5 @@ public class RoutingInformations {
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
-
-}
-
-    public void buttonPressedLeft(ActionEvent actionEvent) {
-    }
-
-    public void buttonPressedRight(ActionEvent actionEvent) {
-    }
-
-    public void buttonPressedAnzeigen(ActionEvent actionEvent) {
     }
 }
