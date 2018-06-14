@@ -16,6 +16,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Zum auswaehlen verschiedener Sprachen.
+ * Verwendung: Wenn auf den Sprachauswahl-Button geklickt wurde.
+ *
+ * @author Julia Fassbinder
+ *
+ */
 public class Language {
 
     @FXML
@@ -129,17 +138,62 @@ public class Language {
     @FXML
     private ImageView image_marker;
 
+    //Klassenspezifische Buttons:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des Deutsch-Buttons.
+     * Verwendung: Wenn der Deutsch-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedGerman(ActionEvent actionEvent) {
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des Englisch-Buttons.
+     * Verwendung: Wenn der Englisch-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedEnglish(ActionEvent actionEvent) {
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Aktion bei betaetigen des Franzoesisch-Buttons.
+     * Verwendung: Wenn der Franzoesisch-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedFrancais(ActionEvent actionEvent) {
 
     }
 
-    //Button-Events werden erstellt
+
+    //Zurueck-Button:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
@@ -149,6 +203,20 @@ public class Language {
         window.show();
     }
 
+
+    //Buttons der Button-Bar:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Suchen-View oeffnen .
+     * Verwendung: Wenn der Suchen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
@@ -158,6 +226,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Filter-View oeffnen .
+     * Verwendung: Wenn der Filter-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
@@ -167,6 +246,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Einschraenkungsgrad-View oeffnen .
+     * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
@@ -176,6 +266,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Routen-View oeffnen .
+     * Verwendung: Wenn der Routen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
@@ -185,6 +286,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Home-View oeffnen .
+     * Verwendung: Wenn der Home-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
@@ -194,6 +306,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Sprachauswahl-View oeffnen .
+     * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
         Scene scene = new Scene(parent);
@@ -203,6 +326,17 @@ public class Language {
         window.show();
     }
 
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Hilfe-View oeffnen .
+     * Verwendung: Wenn der Hilfe-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Julia Fassbinder
+     *
+     */
     public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
         Scene scene = new Scene(parent);

@@ -22,6 +22,16 @@ package eu.iums.barou.controllers;
         import java.awt.event.ActionEvent;
         import java.io.IOException;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Home-Ansicht bedienen.
+ * Verwendung: Bei Start und nach klicken auf den Home-Button.
+ *
+ * @author Seline Winkelmann
+ *
+  */
 public class Home {
 
     @FXML
@@ -30,10 +40,6 @@ public class Home {
     @FXML
     private AnchorPane anchorpane_greenbar;
 
-    /*protected void initialize() {
-        anchorpane_greenbar.setVisible(true);
-
-    }*/
     @FXML
     private Parent mapView;
 
@@ -122,12 +128,51 @@ public class Home {
 
     @FXML
     private Button button_Hilfe;
+
     @FXML
     protected void initialize(){
-
     }
 
-    //Button-Events werden erstellt
+
+    //Deklarierte Methoden:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Filtern.
+     * Verwendung: --
+     *
+     * @param Text
+     * @author Seline Winkelmann
+     *
+     */
+    public void Filter(String Text) {
+        RequestModel.NodeFilter filter = new RequestModel.NodeFilter()
+                .withBoundingBox(
+                        new RequestModel.BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
+                .withWheelchair(Wheelchair.Yes)
+                .withSearchQuery(Text);
+        API.nodes(filter).whenComplete((response, error) -> {
+            if (response != null) System.out.println(response);
+
+            else error.printStackTrace();
+        });
+    }
+
+
+    //Buttons der Button-Bar:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Suchen-View oeffnen .
+     * Verwendung: Wenn der Suchen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
     public void buttonPressedSearch(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
         Scene scene = new Scene(parent);
@@ -137,8 +182,19 @@ public class Home {
         window.show();
     }
 
-    public void buttonPressedHelp(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Filter-View oeffnen .
+     * Verwendung: Wenn der Filter-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
+    public void buttonPressedFilter(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -146,33 +202,17 @@ public class Home {
         window.show();
     }
 
-    public void buttonPressedLanguage(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void buttonPressedHome(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
-    public void buttonPressedRoute(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
-
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Einschraenkungsgrad-View oeffnen .
+     * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
     public void buttonPressedLimitations(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
         Scene scene = new Scene(parent);
@@ -182,27 +222,96 @@ public class Home {
         window.show();
     }
 
-    public void buttonPressedFilter(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Routen-View oeffnen .
+     * Verwendung: Wenn der Routen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException4
+     * @author Seline Winkelmann
+     *
+     */
+    public void buttonPressedRoute(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
-
     }
 
-    public void buttonPressedGastronomie(javafx.event.ActionEvent actionEvent) {
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Home-View oeffnen .
+     * Verwendung: Wenn der Home-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
+    public void buttonPressedHome(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
+        Scene scene = new Scene(parent);
 
-        Filter("Gastronomie");
-
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
     }
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Sprachauswahl-View oeffnen .
+     * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
+    public void buttonPressedLanguage(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Hilfe-View oeffnen .
+     * Verwendung: Wenn der Hilfe-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author Seline Winkelmann
+     *
+     */
+    public void buttonPressedHelp(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+}
+
+
+//Methoden die eventuell gebruacht werden:
+
 /*
     public void pressButtonSearch (javafx.event.ActionEvent actionEvent) throws IOException {
         /**FXMLLoader fxmlSearch = new FXMLLoader(getClass().getResource("Search.fxml"));
         fxmlSearch.setRoot(this);
         fxmlSearch.setController(this);*/
-        //Parent root = FXMLLoader.load(getClass().getResource("Search.fxml"));
+//Parent root = FXMLLoader.load(getClass().getResource("Search.fxml"));
 
 /*
         FXMLLoader loader = new FXMLLoader();
@@ -236,35 +345,3 @@ public class Home {
         stage.setScene(scene);
         stage.show();
     }*/
-
-    public void Filter(String Text) {
-        RequestModel.NodeFilter filter = new RequestModel.NodeFilter()
-                .withBoundingBox(
-                        new RequestModel.BoundingBox(8.308718, 48.957036, 8.490356, 49.109496))
-                .withWheelchair(Wheelchair.Yes)
-                .withSearchQuery(Text);
-        API.nodes(filter).whenComplete((response, error) -> {
-            if (response != null) System.out.println(response);
-
-            else error.printStackTrace();
-        });
-    }
-
-    public void buttonPressedEinkaufen(javafx.event.ActionEvent actionEvent) {
-        Filter("Einkaufen");
-
-    }
-
-    public void buttonPressedGesundheit(javafx.event.ActionEvent actionEvent) {
-        Filter("Gesundheit");
-    }
-
-    public void buttonPressedUnterhaltung(javafx.event.ActionEvent actionEvent) {
-        Filter("Unterhaltung");
-    }
-
-    public void buttonPressedKultur(javafx.event.ActionEvent actionEvent) {
-        Filter("Kultur");
-    }
-
-}

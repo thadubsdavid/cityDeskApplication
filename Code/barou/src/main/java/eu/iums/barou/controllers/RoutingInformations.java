@@ -23,7 +23,7 @@ import java.io.IOException;
  *
  * Erstelldatum: April 2018
  * Zweck: Zum anzeigen der Routeninformationen
- * Verwendung: Wenn nach einer RFoute gescucht wird.
+ * Verwendung: Wenn nach einer Route gescucht wird.
  *
  * @author Markus Linnartz
  *

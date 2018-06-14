@@ -18,6 +18,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Infos zu einem POI anzeigen.
+ * Verwendung: --
+ *
+ * @David Adam
+ *
+ */
 public class InfoDialog {
 
     @FXML
@@ -158,7 +168,19 @@ public class InfoDialog {
     @FXML
     private ImageView image_marker;
 
-    //Button-Events werden erstellt
+    //Zurueck-Button
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     * @author David Adam
+     *
+     */
     public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
