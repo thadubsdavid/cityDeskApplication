@@ -18,25 +18,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Categories {
+public class Filter {
 
     @FXML
     private AnchorPane anchorpane_Standard;
-
-    @FXML
-    private Button button_Gastronomie;
-
-    @FXML
-    private Button button_Einkaufen;
-
-    @FXML
-    private Button button_Gesundheit;
-
-    @FXML
-    private Button button_Kultur;
-
-    @FXML
-    private Button button_Unterhaltung;
 
     @FXML
     private AnchorPane anchorpane_greenbar;

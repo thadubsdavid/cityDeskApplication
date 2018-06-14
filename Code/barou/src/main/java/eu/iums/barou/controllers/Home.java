@@ -183,7 +183,7 @@ public class Home {
     }
 
     public void buttonPressedFilter(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Categories.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
