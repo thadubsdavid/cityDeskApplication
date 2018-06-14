@@ -28,6 +28,16 @@ import java.time.ZonedDateTime;
 import java.util.Optional;
 import java.util.concurrent.CompletionStage;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Zum Route berechnen.
+ * Verwendung: Wenn auf den Routen-Button geklickt wurde.
+ *
+ * @author Markus Linnartz
+ *
+ */
 public class Route {
 
     @FXML
@@ -63,46 +73,18 @@ public class Route {
     @FXML
     private Button button_Route;
 
-    //Button-Events werden erstellt
-    public void buttonPresssedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
 
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-    }
+    //Deklarierte Methoden:
 
-    private String text;
-    public String Uhrzeit1;
-    public Integer Uhrzeit2;
-    public Integer Uhrzeit3;
-    public Integer Uhrzeit4;
-    public String Linie1;
-    public String Linie2;
-    public String Linie3;
-    public String Linie4;
-
-
-
-    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
-
-
-        }
-
-
-    //Bei Texteingabe der Haltestelle Verbindung auswählen
-
-
-    //Abrufen einer gefilterten Liste von Knoten
-
-
+    /**
+     *
+     * Erstelldatum: Mai 2018
+     * Zweck: Filtern.
+     * Verwendung: --
+     *
+     * @author Markus Linnartz
+     *
+     */
     public void Filter() {
         RequestModel.NodeFilter filter = new RequestModel.NodeFilter()
                 .withBoundingBox(
@@ -114,6 +96,64 @@ public class Route {
             else error.printStackTrace();
         });
     }
+
+
+    //Methodenspezifische Buttons:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Den Routeninformations-View oeffnen .
+     * Verwendung: Wenn der Routen-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     *
+     * @author Markus Linnartz
+     *
+     */
+    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+
+    //Zurueck-Button:
+
+    /**
+     *
+     * Erstelldatum: April 2018
+     * Zweck: Zum Home Menue zurueckkehren.
+     * Verwendung: Wenn der Zurueck-Button betaetigt wird.
+     *
+     * @param actionEvent
+     * @throws IOException
+     *
+     * @author Markus Linnartz
+     *
+     */
+    public void buttonPresssedBack(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
+        Scene scene = new Scene(parent);
+
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+}
+
+
+
+
+// Eventuell benoetigte Methoden:
+
+    //Bei Texteingabe der Haltestelle Verbindung auswählen
+
+
+    //Abrufen einer gefilterten Liste von Knoten
 
 
 /*
@@ -147,7 +187,7 @@ public class Route {
     }
 
 */
-}
+
 
 
 

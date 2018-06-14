@@ -10,6 +10,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+
+/**
+ *
+ * Erstelldatum: Maerz 2018
+ * Zweck: Zum amzeigen der Karte.
+ * Verwendung: Auf jedem View auf dem eine Karte angezeigt wird.
+ *
+ * @author Christine Keller
+ *
+ */
 public class MapController {
 
     private static final Coordinate coordKarlsruheHO = new Coordinate(49.01235, 8.38557);

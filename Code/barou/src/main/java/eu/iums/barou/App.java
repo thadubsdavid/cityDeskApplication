@@ -9,11 +9,42 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
- * The main entry point of the application. Initializes the JavaFX UI as well as other required resources and services.
  *
- * The application logic should be delegated to the controllers and other components.
+ * Erstelldatum: April 2018
+ * Zweck: Zum Starten der App.
+ * Verwendung: Bei Start der App.
+ *
+ * @author Java
+ *
  */
 public class App extends javafx.application.Application {
+
+
+    Stage window;
+    Scene ButtonBar, Search;
+
+
+
+    @FXML
+    public Button button_Sprache;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        //Scene Language = FXMLLoader.load(App.class.getResource("Language.fxml"));
+        //window = primaryStage;
+        //button_Sprache.setOnAction(e -> window.setScene(Language));
+        FXMLLoader loader = new FXMLLoader();
+        String pfad = "Home.fxml";
+        loader.setLocation(getClass().getResource(pfad));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        }
+}
+
+
+// Eventuell Benoetigte Daten:
 
 
    /* public static void main(String[] args) {
@@ -45,36 +76,3 @@ public class App extends javafx.application.Application {
      * @param primaryStage
      * @throws Exception
      */
-
-    Stage window;
-    Scene ButtonBar, Search;
-
-
-
-    @FXML
-    public Button button_Sprache;
-
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        //Scene Language = FXMLLoader.load(App.class.getResource("Language.fxml"));
-        //window = primaryStage;
-        //button_Sprache.setOnAction(e -> window.setScene(Language));
-
-        FXMLLoader loader = new FXMLLoader();
-        String pfad = "Home.fxml";
-        loader.setLocation(getClass().getResource(pfad));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        }
-
-
-    /*static Stage stg;
-
-    public void start (Stage stage) throws Exception {
-        this.stg = stage;
-        Parent root = FXMLLoader.load(getClass().getResource("Search.fxml"));
-        stage.show();
-    }*/
-}

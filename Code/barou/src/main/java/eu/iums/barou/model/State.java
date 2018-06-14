@@ -3,6 +3,16 @@ package eu.iums.barou.model;
 import com.sothawo.mapjfx.Coordinate;
 import eu.iums.barou.controllers.Route;
 
+
+/**
+ *
+ * Erstelldatum: April 2018
+ * Zweck: Get und Set Mehoden erstellen.
+ * Verwendung: Wenn Get und Set Methoden aufgerufen werden.
+ *
+ * @author Annika Roeder
+ *
+ */
 public class State {
 
     private  static State instance;

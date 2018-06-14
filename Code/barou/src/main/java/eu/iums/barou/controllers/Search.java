@@ -20,10 +20,10 @@ import java.io.IOException;
 /**
  *
  * Erstelldatum: April 2018
- * Zweck: Get und Set Methoden implementieren.
- * Verwendung: Wenn Get und Set Methoden aufgerufen werden.
+ * Zweck: Zum suchen von Zielen mit Texteingabe.
+ * Verwendung: Wenn Suchen-Button betaetigt wurde.
  *
- * @author Annika Roeder
+ * @author David Adam
  */
 public class Search {
 
@@ -54,10 +54,10 @@ public class Search {
     /**
      *
      * Erstelldatum: April 2018
-     * Zweck: Zum Text setten.
-     * Verwendung: Wenn Text gesettet wird.
+     * Zweck: Zum suchen von Zielen mit Texteingabe.
+     * Verwendung: Bei Klick auf den Suchen-Button.
      *
-     * @author Annika Roeder
+     * @author David Adam
      *
      */
     protected void buttonPressed(){
@@ -76,7 +76,7 @@ public class Search {
      *
      * @param actionEvent
      * @throws IOException
-     * @author Annika Roeder
+     * @author David Adam
      *
      */
     public void pressButtonBack(ActionEvent actionEvent) throws IOException {
