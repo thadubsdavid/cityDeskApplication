@@ -1,5 +1,7 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.wheelmap.api.API;
+import eu.iums.wheelmap.api.RequestModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -65,6 +67,25 @@ public class Search {
         text_SucheEingabe.setText(text);
         text_SucheEingabe.clear();
     }
+
+    /**
+     *
+     * Erstelldatum: Juni 2018
+     * Zweck: Zum suchen von Zielen mit Texteingabe.
+     * Verwendung: Bei Klick auf den Suchen-Button.
+     *
+     * @author David Adam
+     *
+     */
+    public void Category () {
+        RequestModel.CategoryFilter filter = new RequestModel.CategoryFilter()
+                .withLocale("de");
+        API.categories(filter).whenComplete((response, error) -> {
+            if (response != null) System.out.println(response);
+            else error.printStackTrace();
+        });
+    }
+
 
     //Zurueck-Button
 

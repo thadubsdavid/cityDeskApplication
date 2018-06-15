@@ -3,6 +3,9 @@ package eu.iums.barou.model;
 import com.sothawo.mapjfx.Coordinate;
 import eu.iums.barou.controllers.Route;
 
+import javax.xml.soap.Node;
+import java.util.List;
+
 
 /**
  *
@@ -17,8 +20,8 @@ public class State {
 
     private  static State instance;
     private Coordinate startpunkt;
-//    private Ort ort;
     private Route route;
+    private List<Node> poiListe;
 
 
     private State(){

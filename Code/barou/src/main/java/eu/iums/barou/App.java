@@ -20,8 +20,8 @@ import javafx.stage.Stage;
 public class App extends javafx.application.Application {
 
 
-    Stage window;
-    Scene ButtonBar, Search;
+    private static App instance;
+
 
 
 

@@ -162,20 +162,55 @@
                   <Image url="@Pictures/pfeil1.png" />
                </image>
             </ImageView>
-            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" onAction="#pressButtonBack" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
+            <Button id="button_80x80_transparent" fx:id="button_Zurück" mnemonicParsing="false" opacity="0.1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #669900;" textFill="#d7d7d7">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
          </children>
       </Group>
-      <MenuButton layoutX="471.0" layoutY="468.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="287.0" text="Filter">
+      <MenuButton layoutX="14.0" layoutY="496.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="195.0" text="Gastronomie">
          <items>
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedGastronomie" text="Gatronomie" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedEinkaufen" text="Einkaufen" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedGesundheit" text="Gesundheit" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedKultur" text="Kultur" />
-            <MenuItem mnemonicParsing="false" onAction="#buttonPressedUnterhaltung" text="Unterhaltung" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedRestaurant" text="Restaurant" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedBar" text="Bar" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedFastFood" text="Imbiss" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedBiergarten" text="Biergarten" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedCafe" text="Cafe" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="231.0" layoutY="496.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="195.0" text="Einkaufen">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedShoppingCenter" text="Shoppingcenter" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedSupermarket" text="Supermarkt" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedDrogerie" text="Drogerie" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedClothes" text="Kleidung" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedKiosk" text="Kiosk" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="448.0" layoutY="496.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="195.0" text="Gesundheit">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedDoctor" text="Arzt" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedHospital" text="Krankenhaus" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedPharmacie" text="Aphotheke" />
+            <MenuItem mnemonicParsing="false" onAction="#buttonPressedPetDoctor" text="Tierarzt" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="660.0" layoutY="496.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="195.0" text="Kulutur">
+         <items>
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedArt" text="Kunstwerk" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedCastle" text="Schloss" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedHitoryPoint" text="Denkmal" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedViewPoint" text="Aussichtspunkt" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedSight" text="Attraktion" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="874.0" layoutY="496.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="195.0" text="Unterhaltung">
+         <items>
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedSwimming" text="Schwimmbad" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedCinema" text="Kino" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedTheater" text="Theater" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedZoo" text="Zoo" />
+             <MenuItem mnemonicParsing="false" onAction="#buttonPressedNightClub" text="Nachtclub" />
          </items>
       </MenuButton>
    </children>
