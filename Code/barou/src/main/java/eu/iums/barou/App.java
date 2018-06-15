@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 /**
  *
  * Erstelldatum: April 2018
@@ -21,18 +23,44 @@ public class App extends javafx.application.Application {
 
 
     private static App instance;
-
+    private Scene primaryScene;
+    private Parent Home;
+    private Parent Search;
+    private Parent Filter;
+    private Parent Limitation;
+    private Parent Route;
+    private Parent RoutingInformations;
+    private Parent Language;
+    private Parent Help;
+    private Parent MapView;
+    private Parent InfoDialog;
 
 
 
     @FXML
     public Button button_Sprache;
 
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Scene Language = FXMLLoader.load(App.class.getResource("Language.fxml"));
-        //window = primaryStage;
-        //button_Sprache.setOnAction(e -> window.setScene(Language));
+        instance = this;
+
+        Home = new FXMLLoader(App.class.getResource("Home.fxml")).load();
+        Search = new FXMLLoader(App.class.getResource("Search.fxml")).load();
+        Filter = new FXMLLoader(App.class.getResource("Filter.fxml")).load();
+        Limitation = new FXMLLoader(App.class.getResource("Limitation.fxml")).load();
+        Route = new FXMLLoader(App.class.getResource("Route.fxml")).load();
+        RoutingInformations = new FXMLLoader(App.class.getResource("RoutingInformations.fxml")).load();
+        Language = new FXMLLoader(App.class.getResource("Language.fxml")).load();
+        Help = new FXMLLoader(App.class.getResource("Help.fxml")).load();
+        MapView = new FXMLLoader(App.class.getResource("MapView.fxml")).load();
+        InfoDialog = new FXMLLoader(App.class.getResource("InfoDialog.fxml")).load();
+
         FXMLLoader loader = new FXMLLoader();
         String pfad = "Home.fxml";
         loader.setLocation(getClass().getResource(pfad));
@@ -41,7 +69,46 @@ public class App extends javafx.application.Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         }
+
+
+    public void showHome() throws IOException {
+        primaryScene.setRoot(Home); }
+
+    public void showSearch() throws IOException {
+        primaryScene.setRoot(Search); }
+
+    public void showFilter() throws IOException {
+        primaryScene.setRoot(Filter); }
+
+    public void showLimitation() throws IOException {
+        primaryScene.setRoot(Limitation); }
+
+    public void showRoute() throws IOException {
+        primaryScene.setRoot(Route); }
+
+    public void showRoutingInformations() throws IOException {
+        primaryScene.setRoot(RoutingInformations); }
+
+    public void showLanguage() throws IOException {
+        primaryScene.setRoot(Language); }
+
+    public void showHelp() throws IOException {
+        primaryScene.setRoot(Help); }
+
+    public void showMapView() throws IOException {
+        primaryScene.setRoot(MapView); }
+
+    public void showInfoDialog() throws IOException {
+        primaryScene.setRoot(InfoDialog); }
+
+    public static App getInstance() {
+        return instance;
+    }
 }
+
+
+
+
 
 
 // Eventuell Benoetigte Daten:

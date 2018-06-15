@@ -1,8 +1,6 @@
 package eu.iums.barou.controllers;
 
-import com.sothawo.mapjfx.Coordinate;
-import com.sothawo.mapjfx.MapType;
-import com.sothawo.mapjfx.MapView;
+import com.sothawo.mapjfx.*;
 import com.sothawo.mapjfx.offline.OfflineCache;
 import javafx.fxml.FXML;
 
@@ -42,6 +40,12 @@ public class MapController {
         mapView.setCenter(coordKarlsruheHO);
         mapView.setZoom(14);
         mapView.initialize();
+    }
 
+    public void setMarker(Coordinate coordinate, String label) {
+        Marker newMarker = Marker.createProvided(Marker.Provided.RED).setPosition(coordinate).setVisible(true);
+        MapLabel mLabel = new MapLabel(label, 10, -10).setVisible(true).setCssClass("red-label");
+        newMarker.attachLabel(mLabel);
+        mapView.addMarker(newMarker);
     }
 }

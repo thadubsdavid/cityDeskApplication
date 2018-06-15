@@ -17,7 +17,6 @@
 <AnchorPane fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Help">
     <children>
         <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-
         <Pane fx:id="pane_greenhelp" layoutX="197.0" layoutY="117.0" prefHeight="506.0" prefWidth="823.0" style="-fx-background-color: #669900;">
             <children>
                 <Label fx:id="label_Bedienungshinweise" layoutX="38.0" layoutY="32.0" text="Bedienungshinweise ..." textFill="#d7d7d7">

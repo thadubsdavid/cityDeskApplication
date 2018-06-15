@@ -1,5 +1,6 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.barou.App;
 import eu.iums.wheelmap.api.API;
 import eu.iums.wheelmap.api.RequestModel;
 import javafx.event.ActionEvent;
@@ -644,8 +645,8 @@ public class Filter {
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressHome(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
+    public void ButtonPressHome(ActionEvent actionEvent) throws IOException {
+       Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
         Scene scene = new Scene(parent);
 
         Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
