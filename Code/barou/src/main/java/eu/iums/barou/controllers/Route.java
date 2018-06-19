@@ -2,6 +2,7 @@ package eu.iums.barou.controllers;
 
 import akka.dispatch.japi;
 import akka.japi.JAPI;
+import eu.iums.barou.App;
 import eu.iums.trias.api.LocationInformationRequestPayload;
 import eu.iums.wheelmap.api.API;
 import eu.iums.wheelmap.api.RequestModel;
@@ -113,12 +114,11 @@ public class Route {
      *
      */
     public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../RoutingInformations.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+        try {
+            App.getInstance().showRoutingInformations();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     //Zurueck-Button:
@@ -130,18 +130,15 @@ public class Route {
      * Verwendung: Wenn der Zurueck-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
-     *
      * @author Markus Linnartz
      *
      */
-    public void buttonPresssedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPresssedBack(ActionEvent actionEvent)  {
+        try {
+            App.getInstance().showHome();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 

@@ -1,5 +1,6 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.barou.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -177,16 +178,14 @@ public class InfoDialog {
      * Verwendung: Wenn der Zurueck-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author David Adam
      *
      */
-    public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedBack(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showHome();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

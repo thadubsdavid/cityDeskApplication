@@ -1,5 +1,6 @@
 package eu.iums.barou.controllers;
 
+import eu.iums.barou.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -286,16 +287,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Zurueck-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedBack(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showRoute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -308,16 +307,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Suchen-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedSearch(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedSearch(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showSearch();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -327,16 +324,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Filter-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedFilter(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedFilter(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showFilter();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -346,16 +341,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedLimitations(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedLimitations(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showLimitation();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -365,16 +358,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Routen-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedRoute(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedRoute(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showRoute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -384,16 +375,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Home-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedHome(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedHome(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showHome();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -403,16 +392,14 @@ public class RoutingInformations {
      * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedLanguage(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedLanguage(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showLanguage();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -423,15 +410,13 @@ public class RoutingInformations {
      * Verwendung: Wenn der Hilfe-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      */
-    public void buttonPressedHelp(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressedHelp(ActionEvent actionEvent) {
+        try {
+            App.getInstance().showHelp();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

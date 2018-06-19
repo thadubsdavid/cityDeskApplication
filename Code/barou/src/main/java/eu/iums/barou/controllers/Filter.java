@@ -31,6 +31,9 @@ import java.io.IOException;
 public class Filter {
 
     @FXML
+    private Parent mapView;
+
+    @FXML
     private AnchorPane anchorpane_Standard;
 
     @FXML
@@ -538,17 +541,15 @@ public class Filter {
      * Verwendung: Wenn der Zurueck-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressBack(ActionEvent actionEvent) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressBack(ActionEvent actionEvent){
+        try {
+            App.getInstance().showHome();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -561,17 +562,15 @@ public class Filter {
      * Verwendung: Wenn der Suchen-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void buttonPressSearch(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Search.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void buttonPressSearch(ActionEvent actionEvent){
+        try {
+            App.getInstance().showSearch();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -581,17 +580,15 @@ public class Filter {
      * Verwendung: Wenn der Filter-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtoPressFilter(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Filter.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtoPressFilter(ActionEvent actionEvent){
+        try {
+            App.getInstance().showFilter();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -601,17 +598,15 @@ public class Filter {
      * Verwendung: Wenn der Einschraenkungsgrad-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressLimitations(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Limitation.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressLimitations(ActionEvent actionEvent){
+        try {
+            App.getInstance().showLimitation();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -621,17 +616,15 @@ public class Filter {
      * Verwendung: Wenn der Routen-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressRoute(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Route.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressRoute(ActionEvent actionEvent){
+        try {
+            App.getInstance().showRoute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -640,18 +633,15 @@ public class Filter {
      * Zweck: Den Home-View oeffnen .
      * Verwendung: Wenn der Home-Button betaetigt wird.
      *
-     * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressHome(ActionEvent actionEvent) throws IOException {
-       Parent parent = FXMLLoader.load(getClass().getResource("../Home.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressHome(ActionEvent actionEvent){
+        try {
+            App.getInstance().showHome();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -661,17 +651,15 @@ public class Filter {
      * Verwendung: Wenn der Sprachauswahl-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressLanguage(ActionEvent actionEvent) throws IOException{
-        Parent parent = FXMLLoader.load(getClass().getResource("../Language.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressLanguage(ActionEvent actionEvent){
+        try {
+            App.getInstance().showLanguage();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -681,16 +669,14 @@ public class Filter {
      * Verwendung: Wenn der Hilfe-Button betaetigt wird.
      *
      * @param actionEvent
-     * @throws IOException
      * @author Markus Linnartz
      *
      */
-    public void ButtonPressHelp(ActionEvent actionEvent)throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../Help.fxml"));
-        Scene scene = new Scene(parent);
-
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        window.setScene(scene);
-        window.show();
+    public void ButtonPressHelp(ActionEvent actionEvent){
+        try {
+            App.getInstance().showHelp();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

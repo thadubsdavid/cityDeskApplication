@@ -15,8 +15,7 @@
 
 <AnchorPane id="anchorpane_Standard" fx:id="anchorpane_Standard" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.iums.barou.controllers.Limitation">
    <children>
-      <MapView fx:id="mapView" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-
+      <fx:include fx:id="mapView" layoutY="760.0" prefHeight="200.0" prefWidth="800.0" source="MapView.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane id="pane_Einschränkungen" fx:id="pane_greenHintergrundInformations" layoutY="570.0" prefHeight="92.0" prefWidth="1102.0" style="-fx-background-color: #669900;">
          <children>
             <CheckBox id="checkbox_Treppe" fx:id="checkbox_Treppe" layoutX="32.0" layoutY="11.0" mnemonicParsing="false" text="Keine Treppe" textFill="#d7d7d7">
