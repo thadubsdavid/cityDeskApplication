@@ -55,7 +55,6 @@ public class State {
 
     private List<Node> poiListe;
 
-
     private State(){
 
     }

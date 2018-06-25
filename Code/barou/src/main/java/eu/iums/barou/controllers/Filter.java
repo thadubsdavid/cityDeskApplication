@@ -181,7 +181,6 @@ public class Filter {
     }
 
 
-
     //Filter fuer GASTRONOMIE:
 
     /**
