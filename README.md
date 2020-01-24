@@ -1,2 +1,2 @@
-# softwareentwicklung-sose18g1
-Übung Softwareentwicklung Sommersemester 2018 Gruppe 1
+# Smart Desk Application
+A Smart Desk Application for a central station
